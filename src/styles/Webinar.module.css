@@ -1,0 +1,12 @@
+.containerParent{
+    background-color: rgb(63, 137, 172);
+    padding: 100px 0px;
+    background-image: url("../assets/blueBackgroundImage.png");
+}
+
+.containerInside{
+    width: 1440px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}

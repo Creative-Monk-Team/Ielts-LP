@@ -1,0 +1,88 @@
+.containerParent{
+  padding: 80px 0px;
+}
+.container {
+     width: 1440px; /* Ensures the layout adapts to a large screen width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 28px; /* Slightly larger font for a more prominent heading */
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .cardContainer {
+    display: grid; /* Use grid layout for better control and responsiveness */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamic sizing */
+    gap: 20px; /* Maintain spacing between cards */
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly increased shadow on hover */
+  }
+  
+  .image {
+    height: 150px;
+    background-image: url('../assets/banner05_Recent.jpg') center center / cover no-repeat;
+    width: 100%;
+    
+  }
+  
+  .details {
+    padding: 20px; /* Add more padding for better spacing */
+  }
+  
+  .title {
+    font-size: 20px; /* Slightly larger font for the title */
+    color: #222;
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
+  
+  .info {
+    font-size: 14px;
+    margin-bottom: 10px; /* Increased spacing for readability */
+    line-height: 1.5; /* Better line spacing */
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #f05a48;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px; /* Slightly larger font for buttons */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #d04a3b;
+    transform: scale(1.02); /* Add a slight scaling effect on hover */
+  }
+  
