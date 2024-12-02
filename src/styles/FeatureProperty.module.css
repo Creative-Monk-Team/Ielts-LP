@@ -105,11 +105,11 @@
   .yellowLineFlex div {
     width: 50px;
     height: 2px;
-    background-color: var(--primary-color-golden);
+    background-color:#f17f56;
   }
   
   .yellowLineFlex h5{
-    color: var(--primary-color-golden);
+    color:#f17f56;
   }
   
   .FeaturePropertyContent h1{

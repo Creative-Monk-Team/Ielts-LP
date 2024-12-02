@@ -1,11 +1,11 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import styles from "../styles/PopupForm.module.css";
 import { AuthContext } from "../context/AuthContextProvider";
 import close from "../assets/closeWhite.png";
-import logo from "../assets/logo.png"; 
+import logo from "../assets/logo.png";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 
-let PopupForm = () => {
+const PopupForm = () => {
   const notifySuccess = () => {
     toast.success("Form Submitted Successfully", {
       position: "top-center",
@@ -34,15 +34,52 @@ let PopupForm = () => {
     });
   };
 
-  let [showForm, setShowForm, showWaitingLoading, setShowWaitingLoading] =
+  const [showForm, setShowForm, showWaitingLoading, setShowWaitingLoading] =
     useContext(AuthContext);
-  let [name, setName] = useState("");
-  let [email, setEmail] = useState("");
-  let [message, setMessage] = useState("");
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    contact: "",
+    examType: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const examOptions = [
+    "IELTS Academic",
+    "IELTS General",
+    "OET",
+    "PTE",
+    "Business Communication",
+    "CELPIP",
+    "French Training",
+  ];
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.name) newErrors.name = "Name is required";
+    if (!formData.email) newErrors.email = "Please enter a valid email";
+    if (!formData.contact) newErrors.contact = "Contact number is required";
+    if (!formData.examType) newErrors.examType = "Please select an exam type";
+    return newErrors;
+  };
 
   const FormHandler = async (e) => {
-    setShowWaitingLoading(true);
     e.preventDefault();
+
+    const validationErrors = validateForm();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
+    setErrors({});
+    setShowWaitingLoading(true);
 
     try {
       const response = await fetch(
@@ -53,10 +90,10 @@ let PopupForm = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            from: email,
+            from: formData.email,
             to: "creativemonktesting@gmail.com",
             subject: "Contact Form Submission",
-            text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+            text: `Name: ${formData.name}\nEmail: ${formData.email}\nContact: ${formData.contact}\nExam Type: ${formData.examType}`,
           }),
         }
       );
@@ -65,7 +102,7 @@ let PopupForm = () => {
         notifySuccess();
         setShowWaitingLoading(false);
         setTimeout(() => {
-          window.location.href="/thankyou"
+          window.location.href = "/thankyou";
         }, 5000);
       } else {
         setShowWaitingLoading(false);
@@ -76,10 +113,10 @@ let PopupForm = () => {
       setShowWaitingLoading(false);
     }
   };
+
   return (
     <>
       <ToastContainer />
-
       <div
         className={`${styles.popupFormParent} ${
           showForm ? styles.showForm : null
@@ -91,37 +128,60 @@ let PopupForm = () => {
               className={styles.close}
               src={close}
               onClick={() => setShowForm(false)}
+              alt="Close"
             />
           </div>
-          <img src={logo} className={styles.logo} />
-          <h3>Connect & Download Brochure!</h3>
+          <img src={logo} className={styles.logo} alt="Logo" />
+          <h3>Lorem ipsum dolor sit.</h3>
           <p>
-            Fill out the form to connect with us and instantly download our
-            brochure for more information!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum!
           </p>
           <form onSubmit={FormHandler}>
-            <div>
+            <div className={styles.row}>
               <input
+                name="name"
                 placeholder="Your Name"
                 type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                value={formData.name}
+                onChange={handleChange}
+                className={errors.name ? styles.error : ""}
                 required
               />
               <input
+                name="email"
                 placeholder="Your Email"
                 type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={formData.email}
+                onChange={handleChange}
+                className={errors.email ? styles.error : ""}
                 required
               />
             </div>
-            <textarea
-              placeholder="Your Message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            />
+            <div className={styles.row}>
+              <select
+                name="examType"
+                value={formData.examType}
+                onChange={handleChange}
+                className={errors.examType ? styles.error : ""}
+                required
+              >
+                <option value="">Exams Preparing*</option>
+                {examOptions.map((option, index) => (
+                  <option key={index} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+              <input
+                name="contact"
+                placeholder="Your Contact Number"
+                type="tel"
+                value={formData.contact}
+                onChange={handleChange}
+                className={errors.contact ? styles.error : ""}
+                required
+              />
+            </div>
             <button type="submit">Send</button>
           </form>
         </div>

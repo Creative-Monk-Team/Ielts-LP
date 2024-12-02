@@ -15,6 +15,7 @@ import Joining from "../components/Joining";
 import Numbers from "../components/Numbers";
 import CoursesCard from "../components/Courses";
 import Webinar from "../components/Webinar";
+import CountdownTimer from "../components/CountdownTimer";
 
 let Home = () => {
   return (
@@ -47,7 +48,7 @@ let Home = () => {
         <Webinar/>
         {/* <WhyChooseUs/> */}
         {/* <Explore /> */}
-        {/* <ContactForm /> */}
+        <ContactForm />
         <Footer />
       </div>
     </>

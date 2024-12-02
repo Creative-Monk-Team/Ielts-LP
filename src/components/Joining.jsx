@@ -1,5 +1,8 @@
 import styles from "../styles/Joining.module.css";
- 
+import Transparency from "../assets/transparency.svg";
+import Efficiency from "../assets/efficacy (1).svg";
+import GainInsights from "../assets/community.svg";
+import BuildConnections from "../assets/networking.svg";
 
 let Joining = () => {
   return (
@@ -10,17 +13,16 @@ let Joining = () => {
     </div>
     <div className={styles.features}>
       <div className={styles.feature}>
-        <div className={styles.icon}>&#x1F6E0;</div>
+        <div className={styles.icon}><img src={Transparency} alt="Transparency" /></div>
         <h3>Transparency</h3>
         <p>
           We believe in providing honest and straightforward information
           throughout your immigration process. You won't have to worry about
-          hidden fees or unexpected costs. Our pricing is clear, upfront, and
-          competitive.
+          hidden fees or unexpected costs. 
         </p>
       </div>
       <div className={styles.feature}>
-        <div className={styles.icon}>&#x2705;</div>
+        <div className={styles.icon}><img src={Efficiency} alt="Efficiency" /></div>
         <h3>Efficiency</h3>
         <p>
           Our team of experts has streamlined the process, guiding you every
@@ -29,7 +31,7 @@ let Joining = () => {
         </p>
       </div>
       <div className={styles.feature}>
-        <div className={styles.icon}>&#x1F4CA;</div>
+        <div className={styles.icon}><img src={GainInsights} alt="GainInsights" /></div>
         <h3>Gain Insights</h3>
         <p>
           You can learn about different immigration requirements and
@@ -38,7 +40,7 @@ let Joining = () => {
         </p>
       </div>
       <div className={styles.feature}>
-        <div className={styles.icon}>&#x1F465;</div>
+        <div className={styles.icon}><img src={BuildConnections} alt="BuildConnections" /></div>
         <h3>Build Connections</h3>
         <p>
           You can interact and understand the doubts and wishes of candidates

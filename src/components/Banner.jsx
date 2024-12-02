@@ -8,6 +8,7 @@ import banner6 from "../assets/banner7.jpg";
 import BannerRecentImg from "../assets/banner01Recent.svg";
 import styles from "../styles/Banner.module.css";
 import Button from "./Button";
+import CountdownTimer from "../components/CountdownTimer";
 
 let Banner = () => {
   let images = [BannerRecentImg ];
@@ -140,10 +141,10 @@ let Banner = () => {
             className={`${styles.bannerContentSection} ${
               styles.animationSection
             } ${isFirstView ? styles.showAnimationSection : ""}`}
-          >
+           >
             <h1>
                 Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit.
+                adipisicing elit.
             </h1>
             {/* <div className={styles.outlinedText}>BOOST</div> */}
 
@@ -155,6 +156,8 @@ let Banner = () => {
             <span className={styles.encquireNowButton}>
             <Button text={'Enquire Now'}/>
             </span>
+            <CountdownTimer/>
+           
           </div>
           {/* <div
             className={`${styles.bannerFormSection} ${

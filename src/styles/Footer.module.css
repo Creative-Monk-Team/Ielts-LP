@@ -5,11 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color-black);
+    background-color: #f17f56;
   }
   
   .footer * {
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   .footer p {
@@ -31,7 +31,7 @@
   
   .footer h3 {
     margin-bottom: 25px;
-    color: var( --primary-color-golden);
+    color:black;
   }
   
   .footerLinks a {
@@ -70,7 +70,7 @@
   
   .footerContact div {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-start;
     gap: 10px;
     margin-bottom: 30px;
@@ -79,6 +79,7 @@
   .footerContact div img {
     width: 25px;
     height: 25px;
+    filter: invert();
   }
   
   @media all and (max-width: 1500px) {
