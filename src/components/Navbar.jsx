@@ -4,7 +4,7 @@
 // let Navbar = () => {
 //   return (
 //     <div className={styles.navbar}>
-      
+
 //       <div className={styles.innerNavbar}>
 //         <a href="/home">
 //           <img src={logo} alt="Logo" className={styles.logo}/>
@@ -42,13 +42,12 @@ let Navbar = () => {
             <img src={logo} alt="Logo" className={styles.logo} />
           </a>
           <div className={styles.optionsDiv}>
-            <a href="/section1">Section 1</a>
-            <a href="/section2">Section 2</a>
-            <a href="/section3">Section 3</a>
-            <a href="/section4">Section 4</a>
-            <a href="/section5">Section 5</a>
-            <a href="/section6">Section 6</a>
-            <a href="/section7">Section 7</a>
+            <a href="#about">About Us</a>            
+            <a href="#speaker">Speaker</a>
+            <a href="#whyChooseUs">Why Choose Us</a>
+            <a href="#whyJoin">Why Join</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -70,14 +69,20 @@ let Navbar = () => {
 
       {/* Mobile Sidebar Menu */}
       <div
-        className={`${styles.hamburgerParent} ${showMenu ? styles.showHamburger : ""}`}
+        className={`${styles.hamburgerParent} ${
+          showMenu ? styles.showHamburger : ""
+        }`}
       >
         <div
           onClick={() => setShowMenu(false)}
-          className={`${styles.hamburgerOverlay} ${showMenu ? styles.showMenu : ""}`}
+          className={`${styles.hamburgerOverlay} ${
+            showMenu ? styles.showMenu : ""
+          }`}
         ></div>
         <div
-          className={`${styles.hamburgerContent} ${showMenu ? styles.showMenuContent : ""}`}
+          className={`${styles.hamburgerContent} ${
+            showMenu ? styles.showMenuContent : ""
+          }`}
         >
           <div className={styles.quickAccess}>
             <p>Menu</p>
@@ -89,13 +94,24 @@ let Navbar = () => {
             />
           </div>
           <div className={styles.smallOptionsDiv}>
-            <a href="/section1" onClick={() => setShowMenu(false)}>Section 1</a>
-            <a href="/section2" onClick={() => setShowMenu(false)}>Section 2</a>
-            <a href="/section3" onClick={() => setShowMenu(false)}>Section 3</a>
-            <a href="/section4" onClick={() => setShowMenu(false)}>Section 4</a>
-            <a href="/section5" onClick={() => setShowMenu(false)}>Section 5</a>
-            <a href="/section6" onClick={() => setShowMenu(false)}>Section 6</a>
-            <a href="/section7" onClick={() => setShowMenu(false)}>Section 7</a>
+            <a href="/section1" onClick={() => setShowMenu(false)}>
+              Section 1
+            </a>
+            <a href="/section2" onClick={() => setShowMenu(false)}>
+              Section 2
+            </a>
+            <a href="/section3" onClick={() => setShowMenu(false)}>
+              Section 3
+            </a>
+            <a href="/section4" onClick={() => setShowMenu(false)}>
+              Section 4
+            </a>
+            <a href="/section5" onClick={() => setShowMenu(false)}>
+              Section 5
+            </a>
+            <a href="/section6" onClick={() => setShowMenu(false)}>
+              Section 6
+            </a>
           </div>
         </div>
       </div>

@@ -236,11 +236,20 @@
 .form {
   background-color: #f17f56; /* Matches the blue background */
   border-radius: 10px;
-  padding: 20px 30px;
+  padding: 40px 30px;
   width: 450px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   color: #fff; /* Ensure all text is white */
   text-align: center;
+}
+
+.form input {
+  border: none;
+}
+
+.form select {
+  background-color: white;
+  border: none;
 }
 
 .closeDiv {
@@ -314,7 +323,7 @@ button {
 
 button:hover {
   transition: background-color 0.3s ease;
- opacity: 0.9;
+  opacity: 0.9;
 }
 
 input::placeholder {
@@ -330,4 +339,3 @@ input::placeholder {
   font-size: 12px;
   text-align: left;
 }
-

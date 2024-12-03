@@ -21,19 +21,19 @@ let Home = () => {
   return (
     <>
       <Helmet>
-        <title>Ielts</title>
+        <title>Prepeve</title>
         <meta
           name="description"
-          content="Nature’s NestA home amidst the Auramah HillsLEARN MOREBuilding EnigmaticLifestyle For SupremacyLEARN MOREExperienceThe Freshness Of NatureLEARN MOREDive into luxurywith our self heating swimming poolLEARN MOREResideIn The Heart Of MountainsLEARN MOREImmerse YourselfInto The World Of LuxuryLEARN MORE STAY IN THE LAP OF NATURE Ultra-luxury Homes spread across 100 acres of forest."
+          content="Description about IELTS here"
         />
-        <meta name="title" property="og:title" content="Auramah Valley" />
+        <meta name="title" property="og:title" content="Prepeve" />
         <meta property="og:image" content={logo} />
         <meta property="og:image:type" content="image/png" />
         <meta
           property="og:description"
-          content="Nature’s NestA home amidst the Auramah HillsLEARN MOREBuilding EnigmaticLifestyle For SupremacyLEARN MOREExperienceThe Freshness Of NatureLEARN MOREDive into luxurywith our self heating swimming poolLEARN MOREResideIn The Heart Of MountainsLEARN MOREImmerse YourselfInto The World Of LuxuryLEARN MORE STAY IN THE LAP OF NATURE Ultra-luxury Homes spread across 100 acres of forest."
+          content="Description about IELTS here"
         />
-        <meta name="Keywords" content="Punjab, Real Estate, Chandigarh" />
+        <meta name="Keywords" content="IELTS, Listening, Speaking, English, Writing" />
       </Helmet>
       <ToastContainer />
       <div className={styles.home}>

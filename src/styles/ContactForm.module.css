@@ -248,6 +248,10 @@ input::placeholder {
   resize: vertical;
 }
 
+.ContactForm textarea:focus{
+  outline: none;
+}
+
 .ContactForm {
   display: flex;
   flex-direction: column;

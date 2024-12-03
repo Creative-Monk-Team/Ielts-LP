@@ -6,7 +6,7 @@
     /* max-width: 1440px; */
     margin: 0 auto;
     padding: 4rem 4rem;
-    background: linear-gradient(to right, #f9f9f9, #ffeeba);
+    background: linear-gradient(to right, #f9f9f9, #f17f56);
     gap: 1rem;
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
   }
@@ -24,7 +24,7 @@
     flex: 1;
     padding: 1rem;
     /* min-width: 200px; */
-    border-left: 1px solid #ddd;
+    border-left: 1px solid #ffffff;
   }
   
   .statItem:first-child {

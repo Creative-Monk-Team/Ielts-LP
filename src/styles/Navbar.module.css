@@ -44,7 +44,8 @@
   justify-content: center;
   position: relative;
   z-index: 3;
-  background-color: #f17f56;
+  /* background-color: #f17f56; */
+  background-color: white;
 }
 
 .innerNavbar {
@@ -74,7 +75,7 @@
   color: black;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 /* Mobile Navbar Styles (Hamburger) */
@@ -128,18 +129,26 @@
 .quickAccess {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   padding-bottom: 15px;
   border-bottom: 1px solid #000;
+  margin-top: 15px; 
+  margin-bottom: 25px; 
+} 
+
+.quickAccess img{
+  margin-top: 4px;
 }
 
 .quickAccess p {
   font-size: 20px;
+  margin-bottom: 0px;
 }
 
 .smallOptionsDiv a {
   display: block;
-  color: #f17f56;
+  /* color: #f17f56; */ 
+  color: black;
   font-size: 18px;
   font-weight: 600;
   margin: 15px 0;
@@ -214,12 +223,14 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #f17f56;
+    /* background-color: #f17f56; */
+    background-color: white;
     padding: 20px;
   }
 
   .hamburger {
     width: 25px;
+    filter: invert();
   }
 
   .hamburgerParent {
