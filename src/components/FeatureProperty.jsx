@@ -2,6 +2,7 @@ import styles from "../styles/FeatureProperty.module.css";
 import { useState, useEffect, useRef } from "react";
 import BannerImage3 from "../assets/banner03_Recent.jpg";
 import Button from "./Button";
+import p2 from "../assets/p2.png";
 
 let FeatureProperty = () => {
   let aboutRef = useRef(null);
@@ -32,6 +33,7 @@ let FeatureProperty = () => {
   }, []);
   return (
     <div className={styles.FeatureProperty} id="speaker">
+      <img src={p2} className={styles.p2}/>
       <div className={styles.innerFeatureProperty}>
         <div
           className={`${styles.FeaturePropertyContent} ${

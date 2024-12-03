@@ -2,6 +2,30 @@
   width: 100%;
   padding: 80px 0px;
   background-color: var(--secondary-color-beige);
+  position: relative;
+}
+
+.p1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: auto;
+  background-size: cover;
+  object-fit: cover;
+  opacity: 0.03;
+  transform: rotate(180deg);
+}
+
+.p2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: auto;
+  background-size: cover;
+  object-fit: cover;
+  opacity: 0.03;
 }
 
 .ContactFormContent {

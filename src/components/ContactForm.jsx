@@ -33,10 +33,11 @@ import WhyImage from "../assets/banner02_Recent.jpg";
 import { useState, useEffect, useRef, useContext } from "react";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import { AuthContext } from "../context/AuthContextProvider";
+import p1 from "../assets/p1.png";
 
 const ContactForm = () => {
   const [showForm, setShowForm, showWaitingLoading, setShowWaitingLoading] =
-  useContext(AuthContext);
+    useContext(AuthContext);
   let aboutRef = useRef(null);
   let [isFirstView, setIsFirstView] = useState(false);
 
@@ -161,6 +162,8 @@ const ContactForm = () => {
     <>
       <ToastContainer />
       <div className={styles.ContactFormParent} id="contact">
+        <img src={p1} className={styles.p1} />
+        <img src={p1} className={styles.p2} />
         <div className={styles.ContactFormChild} ref={aboutRef}>
           <div
             className={`${styles.ContactFormContent} ${
@@ -236,9 +239,9 @@ const ContactForm = () => {
 
           {/* Image Section */}
           <div
-            className={`${styles.imageSec} ${styles.ContactFormImage} ${styles.animationSection} ${
-              isFirstView ? styles.showAnimationSection : ""
-            }`}
+            className={`${styles.imageSec} ${styles.ContactFormImage} ${
+              styles.animationSection
+            } ${isFirstView ? styles.showAnimationSection : ""}`}
           >
             <img className={styles.img1} src={WhyImage} alt="Why Choose Us" />
           </div>

@@ -5,6 +5,7 @@ import GainInsights from "../assets/community.svg";
 import BuildConnections from "../assets/networking.svg";
 import { useState, useEffect, useRef } from "react";
 import Button from "./Button";
+import p3 from "../assets/p3.png"; 
 
 let Joining = () => {
   let aboutRef = useRef(null);
@@ -35,6 +36,8 @@ let Joining = () => {
   }, []);
   return (
     <div className={styles.joiningParent} id="courses">
+      <img src={p3} className={styles.p3}/>
+      <img src={p3} className={styles.p4}/>
       <div
         className={`${styles.innerJoining} ${styles.animationSection} ${
           isFirstView ? styles.showAnimationSection : ""

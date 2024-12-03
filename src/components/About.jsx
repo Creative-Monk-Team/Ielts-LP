@@ -36,7 +36,7 @@ let About = () => {
   return (
     <div className={styles.about} id="about">
       <div className={styles.innerAbout}>
-        <div
+        <div 
           className={`${styles.imageSection} ${styles.animationSection} ${
             isFirstView ? styles.showAnimationSection : ""
           }`}
