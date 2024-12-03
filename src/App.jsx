@@ -9,7 +9,7 @@ import WaitingLoader from "./components/WaitingLoader";
 function App() {
   return (
     <>
-      <div id="auramah_valley">
+      <div id="prepeve">
         <ToastContainer />
         <HelmetProvider>
           <AllRoutes />
