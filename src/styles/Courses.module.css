@@ -15,6 +15,17 @@
   margin-bottom: 30px;
   font-weight: bold;
   color: #444;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.heading.showAnimationSection {
+  transition-delay: 0.2s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .cardContainer {
@@ -22,8 +33,19 @@
   grid-template-columns: repeat(
     auto-fit,
     minmax(300px, 1fr)
-  ); /* Responsive grid layout */
+  );
   gap: 20px;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cardContainer.showAnimationSection {
+  transition-delay: 0.4s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .card {

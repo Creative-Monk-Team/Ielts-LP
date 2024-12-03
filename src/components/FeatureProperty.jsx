@@ -1,6 +1,7 @@
 import styles from "../styles/FeatureProperty.module.css";
 import { useState, useEffect, useRef } from "react";
 import BannerImage3 from "../assets/banner03_Recent.jpg";
+import Button from "./Button";
 
 let FeatureProperty = () => {
   let aboutRef = useRef(null);
@@ -61,7 +62,7 @@ let FeatureProperty = () => {
             dolorum natus eaque nam inventore facere pariatur accusamus
             aspernatur nesciunt quibusdam exercitationem eligendi?
           </p>
-          {/* <Button text={"Enquire Now"} /> */}
+          <Button text={"Book Your Slot Now"}/>
         </div>
         <div
           className={`${styles.imageSection} ${styles.animationSection} ${

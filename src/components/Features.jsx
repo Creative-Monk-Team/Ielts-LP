@@ -76,7 +76,7 @@ const Features = () => {
               <p>Lorem ipsum dolor amet.</p>
             </div>
             <span className={styles.encquireNowButton}>
-              {/* <Button text={"Learn More"} /> */}
+              <Button text={"Learn More"} />
             </span>
           </div>
         </div>

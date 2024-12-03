@@ -74,6 +74,7 @@
 import styles from "../styles/Courses.module.css";
 import Button from "./Button";
 import img1 from "../assets/banner_06.jpg";
+import { useState, useEffect, useRef } from "react";
 
 const courses = [
   {
@@ -107,11 +108,41 @@ const courses = [
 ];
 
 const CoursesCard = () => {
+  let aboutRef = useRef(null);
+  let [isFirstView, setIsFirstView] = useState(false);
+
+  useEffect(() => {
+    let observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsFirstView(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (aboutRef.current) {
+      observer.observe(aboutRef.current);
+    }
+
+    return () => {
+      if (aboutRef.current) {
+        observer.unobserve(aboutRef.current);
+      }
+    };
+  }, []);
   return (
     <div className={styles.containerParent}>
       <div className={styles.container}>
-        <h2 className={styles.heading}>Upcoming Courses</h2>
-        <div className={styles.cardContainer}>
+        <h2 ref={aboutRef} className={`${styles.heading} ${styles.animationSection} ${
+          isFirstView ? styles.showAnimationSection : ""
+        }`}>Upcoming Courses</h2>
+        <div className={`${styles.cardContainer} ${styles.animationSection} ${
+          isFirstView ? styles.showAnimationSection : ""
+        }`}>
           {courses.map((course, index) => (
             <div className={styles.card} key={index}>
               <div

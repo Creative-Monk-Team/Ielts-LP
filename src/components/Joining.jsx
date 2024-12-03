@@ -3,15 +3,49 @@ import Transparency from "../assets/transparency.svg";
 import Efficiency from "../assets/efficacy (1).svg";
 import GainInsights from "../assets/community.svg";
 import BuildConnections from "../assets/networking.svg";
+import { useState, useEffect, useRef } from "react";
+import Button from "./Button";
 
 let Joining = () => {
+  let aboutRef = useRef(null);
+  let [isFirstView, setIsFirstView] = useState(false);
+
+  useEffect(() => {
+    let observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsFirstView(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (aboutRef.current) {
+      observer.observe(aboutRef.current);
+    }
+
+    return () => {
+      if (aboutRef.current) {
+        observer.unobserve(aboutRef.current);
+      }
+    };
+  }, []);
   return (
     <div className={styles.joiningParent} id="courses">
-      <div className={styles.innerJoining}>
-        <h1>What Makes Joining Valuable</h1>
+      <div
+        className={`${styles.innerJoining} ${styles.animationSection} ${
+          isFirstView ? styles.showAnimationSection : ""
+        }`}
+      >
+        <h1 ref={aboutRef}>What Makes Joining Valuable</h1>
         <h3>Become aware of the inside-out details of the IELTS Exam</h3>
       </div>
-      <div className={styles.features}>
+      <div className={`${styles.features} ${styles.animationSection} ${
+          isFirstView ? styles.showAnimationSection : ""
+        }`}>
         <div className={styles.feature}>
           <div className={styles.icon}>
             <img src={BuildConnections} alt="BuildConnections" />
@@ -57,6 +91,7 @@ let Joining = () => {
           </p>
         </div>
       </div>
+      <Button text={"Book Your Slot Now"}/>
     </div>
   );
 };

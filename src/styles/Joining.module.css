@@ -5,8 +5,23 @@
   background-color: #f9f9f9;
 }
 
+.joiningParent button{
+  margin-top: 50px;
+}
+
 .innerJoining {
   margin-bottom: 2rem;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.innerJoining.showAnimationSection {
+  transition-delay: 0.2s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .innerJoining h1 {
@@ -24,6 +39,17 @@
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.features.showAnimationSection {
+  transition-delay: 0.4s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .feature {
