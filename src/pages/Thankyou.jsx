@@ -13,7 +13,7 @@ const ThankYou  = () => {
           <h1 className={styles.thankYouText}>Thank You!</h1>
           <p className={styles.description}>Your submission has been received. We’ll be in touch soon.</p>
  
-          <p className={styles.thankYouNote}>We’re excited to help you on your real estate journey!</p>
+          <p className={styles.thankYouNote}>We’re excited to help you on your Journey!</p>
         </div>
       </div>
     </div>

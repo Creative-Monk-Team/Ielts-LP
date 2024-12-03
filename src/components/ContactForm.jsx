@@ -31,10 +31,19 @@
 import styles from "../styles/ContactForm.module.css";
 import WhyImage from "../assets/banner02_Recent.jpg";
 import { useState, useEffect, useRef } from "react";
+import { ToastContainer, toast, Bounce } from "react-toastify";
 
 const ContactForm = () => {
   let aboutRef = useRef(null);
   let [isFirstView, setIsFirstView] = useState(false);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    query: "",
+  });
+
+  const [errors, setErrors] = useState({});
 
   useEffect(() => {
     let observer = new IntersectionObserver(
@@ -60,8 +69,92 @@ const ContactForm = () => {
     };
   }, []);
 
+  const notifySuccess = () => {
+    toast.success("Form Submitted Successfully", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
+  };
+
+  const notifyError = () => {
+    toast.error("Please try again later.", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.name) newErrors.name = "Name is required";
+    if (!formData.email) newErrors.email = "Please enter a valid email";
+    if (!formData.query) newErrors.query = "Query is required";
+    return newErrors;
+  };
+
+  const FormHandler = async (e) => {
+    e.preventDefault();
+
+    const validationErrors = validateForm();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
+    setErrors({});
+
+    try {
+      const response = await fetch(
+        "https://ibc-nodemailer.onrender.com/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            from: formData.email,
+            to: "creativemonktesting@gmail.com",
+            subject: "Contact Form Submission",
+            text: `Name: ${formData.name}\nEmail: ${formData.email}\nQuery: ${formData.query}`,
+          }),
+        }
+      );
+
+      if (response.ok) {
+        notifySuccess();
+        setFormData({
+          name: "",
+          email: "",
+          query: "",
+        });
+      } else {
+        notifyError();
+      }
+    } catch (error) {
+      notifyError();
+    }
+  };
+
   return (
     <>
+      <ToastContainer />
       <div className={styles.ContactFormParent} id="contact">
         <div className={styles.ContactFormChild} ref={aboutRef}>
           <div
@@ -77,7 +170,7 @@ const ContactForm = () => {
             <p className={styles.ContactFormContentPara}>
               Please let us know your query!
             </p>
-            <form className={styles.ContactForm}>
+            <form className={styles.ContactForm} onSubmit={FormHandler}>
               {/* Name and Email in the Same Row */}
               <div className={styles.rowFlex}>
                 <div className={styles.formGroup}>
@@ -89,6 +182,9 @@ const ContactForm = () => {
                     id="name"
                     name="name"
                     placeholder="Your Full Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className={errors.name ? styles.error : ""}
                   />
                 </div>
 
@@ -101,6 +197,9 @@ const ContactForm = () => {
                     id="email"
                     name="email"
                     placeholder="example@gmail.com"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={errors.email ? styles.error : ""}
                   />
                 </div>
               </div>
@@ -114,6 +213,9 @@ const ContactForm = () => {
                   id="query"
                   name="query"
                   placeholder="Type your query here..."
+                  value={formData.query}
+                  onChange={handleChange}
+                  className={errors.query ? styles.error : ""}
                 />
               </div>
 
@@ -139,5 +241,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
-
