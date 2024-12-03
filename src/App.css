@@ -39,7 +39,7 @@ p {
 
 @font-face {
   font-family: "montserrat";
-  src: url("./assets/fonts/montserrat.regular.ttf") format("truetype");
+  src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
