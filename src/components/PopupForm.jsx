@@ -9,7 +9,7 @@ const PopupForm = () => {
   const notifySuccess = () => {
     toast.success("Form Submitted Successfully", {
       position: "top-center",
-      autoClose: 3000,
+      autoClose: 2500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -23,7 +23,7 @@ const PopupForm = () => {
   const notifyError = () => {
     toast.error("Please try again later.", {
       position: "top-center",
-      autoClose: 3000,
+      autoClose: 2500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -103,7 +103,7 @@ const PopupForm = () => {
         setShowWaitingLoading(false);
         setTimeout(() => {
           window.location.href = "/thankyou";
-        }, 5000);
+        }, 2500);
       } else {
         setShowWaitingLoading(false);
         notifyError();
@@ -133,9 +133,7 @@ const PopupForm = () => {
           </div>
           <img src={logo} className={styles.logo} alt="Logo" />
           <h3>Lorem ipsum dolor sit.</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum!
-          </p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum!</p>
           <form onSubmit={FormHandler}>
             <div className={styles.row}>
               <input

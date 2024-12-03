@@ -30,10 +30,13 @@
 
 import styles from "../styles/ContactForm.module.css";
 import WhyImage from "../assets/banner02_Recent.jpg";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
 import { ToastContainer, toast, Bounce } from "react-toastify";
+import { AuthContext } from "../context/AuthContextProvider";
 
 const ContactForm = () => {
+  const [showForm, setShowForm, showWaitingLoading, setShowWaitingLoading] =
+  useContext(AuthContext);
   let aboutRef = useRef(null);
   let [isFirstView, setIsFirstView] = useState(false);
 
@@ -72,7 +75,7 @@ const ContactForm = () => {
   const notifySuccess = () => {
     toast.success("Form Submitted Successfully", {
       position: "top-center",
-      autoClose: 3000,
+      autoClose: 2500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -86,7 +89,7 @@ const ContactForm = () => {
   const notifyError = () => {
     toast.error("Please try again later.", {
       position: "top-center",
-      autoClose: 3000,
+      autoClose: 2500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -119,6 +122,7 @@ const ContactForm = () => {
     }
 
     setErrors({});
+    setShowWaitingLoading(true);
 
     try {
       const response = await fetch(
@@ -139,15 +143,16 @@ const ContactForm = () => {
 
       if (response.ok) {
         notifySuccess();
-        setFormData({
-          name: "",
-          email: "",
-          query: "",
-        });
+        setShowWaitingLoading(false);
+        setTimeout(() => {
+          window.location.href = "/thankyou";
+        }, 2500);
       } else {
+        setShowWaitingLoading(false);
         notifyError();
       }
     } catch (error) {
+      setShowWaitingLoading(false);
       notifyError();
     }
   };
@@ -185,6 +190,7 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleChange}
                     className={errors.name ? styles.error : ""}
+                    required
                   />
                 </div>
 
@@ -200,6 +206,7 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className={errors.email ? styles.error : ""}
+                    required
                   />
                 </div>
               </div>
@@ -216,6 +223,7 @@ const ContactForm = () => {
                   value={formData.query}
                   onChange={handleChange}
                   className={errors.query ? styles.error : ""}
+                  required
                 />
               </div>
 
