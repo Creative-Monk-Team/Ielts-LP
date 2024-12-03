@@ -1,7 +1,8 @@
 .ContactFormParent {
   width: 100%;
   padding: 80px 0px;
-  background-color: var(--secondary-color-beige);
+  /* background-color: var(--secondary-color-beige); */
+  background-image: linear-gradient(to right, rgb(252, 252, 252), var(--secondary-color-beige));
   position: relative;
 }
 

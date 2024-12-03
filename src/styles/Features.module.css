@@ -51,7 +51,7 @@
 .FeaturesListParent {
   display: flex;
   margin-top: 25px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .FeaturesListParent p {
