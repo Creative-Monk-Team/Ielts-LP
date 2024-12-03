@@ -15,9 +15,9 @@ import logo from "../assets/logo.png";
 import phone from "../assets/phone.png";
 import location from "../assets/location.png";
 import mail from "../assets/mail.png";
-import linkedin from "../assets/linkedin.svg";
-import facebook from "../assets/facebook.svg";
-import instagram from "../assets/instagram.svg";
+import linkedin from "../assets/linkedinIcon.png";
+import facebook from "../assets/facebookIcon.png";
+import instagram from "../assets/instagramIcon.png";
 
 let Footer = () => {
   return (
@@ -35,14 +35,12 @@ let Footer = () => {
 
         <div className={styles.footerLinks}>
           <h3>Quick Links</h3>
-          <a href="#about"> Lorem</a>
-          <a href="#prime-location"> Lorem</a>
-          <a href="#why-choose-ibc"> Lorem</a>
-          <a href="#surroundings"> Lorem</a>
-          <a href="#plot-sizes"> Lorem</a>
-          <a href="#infrastructure"> Lorem</a>
-          <a href="#in-punjab"> Lorem</a>
-          <a href="#contact"> Lorem</a>
+            <a href="#about">About Us</a>
+            <a href="#speaker">Speaker</a>
+            <a href="#whyChooseUs" >Why Choose Us</a>
+            <a href="#whyJoin" >Why Join</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
         </div>
         <div className={styles.footerContact}>
           <h3>Contact Us</h3>

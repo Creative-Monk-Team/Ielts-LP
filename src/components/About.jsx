@@ -34,7 +34,7 @@ let About = () => {
     };
   }, []);
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="about">
       <div className={styles.innerAbout}>
         <div
           className={`${styles.imageSection} ${styles.animationSection} ${

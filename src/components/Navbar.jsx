@@ -94,23 +94,23 @@ let Navbar = () => {
             />
           </div>
           <div className={styles.smallOptionsDiv}>
-            <a href="/section1" onClick={() => setShowMenu(false)}>
-              Section 1
+            <a href="#about" onClick={() => setShowMenu(false)}>
+            About Us
             </a>
-            <a href="/section2" onClick={() => setShowMenu(false)}>
-              Section 2
+            <a href="#speaker" onClick={() => setShowMenu(false)}>
+            Speaker
             </a>
-            <a href="/section3" onClick={() => setShowMenu(false)}>
-              Section 3
+            <a href="#whyChooseUs" onClick={() => setShowMenu(false)}>
+            Why Choose Us
             </a>
-            <a href="/section4" onClick={() => setShowMenu(false)}>
-              Section 4
+            <a href="#whyJoin" onClick={() => setShowMenu(false)}>
+            Why Join
             </a>
-            <a href="/section5" onClick={() => setShowMenu(false)}>
-              Section 5
+            <a href="#courses" onClick={() => setShowMenu(false)}>
+            Courses
             </a>
-            <a href="/section6" onClick={() => setShowMenu(false)}>
-              Section 6
+            <a href="#contact" onClick={() => setShowMenu(false)}>
+            Contact
             </a>
           </div>
         </div>

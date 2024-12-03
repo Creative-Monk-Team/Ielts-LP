@@ -30,7 +30,7 @@ let FeatureProperty = () => {
     };
   }, []);
   return (
-    <div className={styles.FeatureProperty}>
+    <div className={styles.FeatureProperty} id="speaker">
       <div className={styles.innerFeatureProperty}>
         <div
           className={`${styles.FeaturePropertyContent} ${

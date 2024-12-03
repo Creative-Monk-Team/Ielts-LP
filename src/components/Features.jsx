@@ -34,7 +34,7 @@ const Features = () => {
   }, []);
   return (
     <>
-      <div className={styles.FeaturesParent}>
+      <div className={styles.FeaturesParent} id="whyChooseUs">
         <div className={styles.FeaturesChild}>
           <div className={`${styles.FeaturesImage} ${
             styles.animationSection

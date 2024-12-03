@@ -62,7 +62,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className={styles.ContactFormParent}>
+      <div className={styles.ContactFormParent} id="contact">
         <div className={styles.ContactFormChild} ref={aboutRef}>
           <div
             className={`${styles.ContactFormContent} ${

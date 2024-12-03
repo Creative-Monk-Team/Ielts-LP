@@ -15,7 +15,7 @@ let Numbers = () => {
   ];
   return (
     <>
-      <div className={styles.numbersContainer}>
+      <div className={styles.numbersContainer} id="whyJoin">
         <div className={styles.innerNumbersContainer}>
           {stats.map((stat, index) => (
             <div key={index} className={styles.statItem}>
