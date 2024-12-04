@@ -38,7 +38,7 @@ let Navbar = () => {
       {/* Regular Navbar */}
       <div className={styles.navbar}>
         <div className={styles.innerNavbar}>
-          <a href="/home">
+          <a href="#home">
             <img src={logo} alt="Logo" className={styles.logo} />
           </a>
           <div className={styles.optionsDiv}>
@@ -55,7 +55,7 @@ let Navbar = () => {
       {/* Mobile Navbar (Hamburger Icon) */}
       <div className={styles.smallNavbar}>
         <div className={styles.logoDiv}>
-          <a href="/home">
+          <a href="#home">
             <img src={logo} alt="Logo" className={styles.logo} />
           </a>
         </div>
