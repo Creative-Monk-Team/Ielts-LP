@@ -16,16 +16,14 @@ import Numbers from "../components/Numbers";
 import CoursesCard from "../components/Courses";
 import Webinar from "../components/Webinar";
 import CountdownTimer from "../components/CountdownTimer";
+import BottomCta from "../components/BottomCta";
 
 let Home = () => {
   return (
     <>
       <Helmet>
         <title>Prepeve</title>
-        <meta
-          name="description"
-          content="Description about IELTS here"
-        />
+        <meta name="description" content="Description about IELTS here" />
         <meta name="title" property="og:title" content="Prepeve" />
         <meta property="og:image" content={logo} />
         <meta property="og:image:type" content="image/png" />
@@ -33,23 +31,27 @@ let Home = () => {
           property="og:description"
           content="Description about IELTS here"
         />
-        <meta name="Keywords" content="IELTS, Listening, Speaking, English, Writing" />
+        <meta
+          name="Keywords"
+          content="IELTS, Listening, Speaking, English, Writing"
+        />
       </Helmet>
       <ToastContainer />
       <div className={styles.home}>
         <Navbar />
         <Banner />
         <About />
-        <FeatureProperty/>
-        <Features/>
-        <Numbers/>
-        <Joining/>
-        <CoursesCard/>
-        <Webinar/>
+        <FeatureProperty />
+        <Features />
+        <Numbers />
+        <Joining />
+        <CoursesCard />
+        <Webinar />
         {/* <WhyChooseUs/> */}
         {/* <Explore /> */}
         <ContactForm />
         <Footer />
+        <BottomCta />
       </div>
     </>
   );
