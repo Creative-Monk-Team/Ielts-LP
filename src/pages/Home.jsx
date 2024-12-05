@@ -40,7 +40,7 @@ let Home = () => {
       </Helmet>
       <ToastContainer />
       <div className={styles.home}>
-        {/* <Navbar />
+        <Navbar />
         <Banner />
         <About />
         <FeatureProperty />
@@ -48,14 +48,14 @@ let Home = () => {
         <Numbers />
         <Joining />
         <CoursesCard />
-        <Webinar /> */}
+        <Webinar />
         {/* <WhyChooseUs/> */}
         {/* <Explore /> */}
-        {/* <ContactForm />
+        <ContactForm />
         <Footer />
-        <BottomCta /> */}
+        <BottomCta />
         {/* <Grid/> */}
-        <CSS />
+        {/* <CSS /> */}
       </div>
     </>
   );
