@@ -18,6 +18,7 @@ import Webinar from "../components/Webinar";
 import CountdownTimer from "../components/CountdownTimer";
 import BottomCta from "../components/BottomCta";
 import Grid from "../components/Grid";
+import CSS from "../components/CSS";
 
 let Home = () => {
   return (
@@ -39,7 +40,7 @@ let Home = () => {
       </Helmet>
       <ToastContainer />
       <div className={styles.home}>
-        <Navbar />
+        {/* <Navbar />
         <Banner />
         <About />
         <FeatureProperty />
@@ -47,13 +48,14 @@ let Home = () => {
         <Numbers />
         <Joining />
         <CoursesCard />
-        <Webinar />
+        <Webinar /> */}
         {/* <WhyChooseUs/> */}
         {/* <Explore /> */}
-        <ContactForm />
+        {/* <ContactForm />
         <Footer />
-        <BottomCta />
+        <BottomCta /> */}
         {/* <Grid/> */}
+        <CSS />
       </div>
     </>
   );
