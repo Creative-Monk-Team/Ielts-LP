@@ -17,6 +17,7 @@ import CoursesCard from "../components/Courses";
 import Webinar from "../components/Webinar";
 import CountdownTimer from "../components/CountdownTimer";
 import BottomCta from "../components/BottomCta";
+import Grid from "../components/Grid";
 
 let Home = () => {
   return (
@@ -52,6 +53,7 @@ let Home = () => {
         <ContactForm />
         <Footer />
         <BottomCta />
+        {/* <Grid/> */}
       </div>
     </>
   );
