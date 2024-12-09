@@ -29,7 +29,7 @@
 // export default ContactForm;
 
 import styles from "../styles/ContactForm.module.css";
-import WhyImage from "../assets/banner02_Recent.jpg";
+import WhyImage from "../assets/contactUs.png";
 import { useState, useEffect, useRef, useContext } from "react";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import { AuthContext } from "../context/AuthContextProvider";
