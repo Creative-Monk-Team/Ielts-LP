@@ -132,8 +132,8 @@ const PopupForm = () => {
             />
           </div>
           <img src={logo} className={styles.logo} alt="Logo" />
-          <h3>Lorem ipsum dolor sit.</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum!</p>
+          <h3>Seize the Opportunity Now!</h3>
+          <p>Complete the form now and unlock your chance to excel in the IELTS exam!</p>
           <form onSubmit={FormHandler}>
             <div className={styles.row}>
               <input

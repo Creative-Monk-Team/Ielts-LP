@@ -17,7 +17,7 @@ const CountdownTimer = () => {
       let mm = String(today.getMonth() + 1).padStart(2, "0");
       let yyyy = today.getFullYear();
       let nextYear = yyyy + 1;
-      let dayMonth = "12/18/";
+      let dayMonth = "12/31/";
       let birthday = dayMonth + yyyy;
   
       today = mm + "/" + dd + "/" + yyyy;
@@ -33,7 +33,7 @@ const CountdownTimer = () => {
         const distance = countDownDate - now;
   
         setDays(Math.floor(distance / (1000 * 60 * 60 * 24)));
-        setHours(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+        setHours(Math.floor((distance % (1000 * 60 * 60 * 10)) / (1000 * 60 * 60)));
         setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
         setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
   

@@ -26,21 +26,20 @@ let Footer = () => {
         <div>
           <img src={logo} className={styles.logo} />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quam
-            nihil, ipsum neque accusamus eaque debitis quisquam tempore nostrum
-            autem soluta dolores consectetur! Non sit odit eaque aliquam
-            pariatur maxime.
+            Accelerate your IELTS preparation with our intensive crash course,
+            designed to help you master key skills and strategies in just a
+            short time. Achieve your target score confidently and efficiently.
           </p>
         </div>
 
         <div className={styles.footerLinks}>
           <h3>Quick Links</h3>
-            <a href="#about">About Us</a>
-            <a href="#speaker">Speaker</a>
-            <a href="#whyChooseUs" >Why Choose Us</a>
-            <a href="#whyJoin" >FAQ'S</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
+          <a href="#about">About Us</a>
+          <a href="#speaker">Speaker</a>
+          <a href="#whyChooseUs">Why Choose Us</a>
+          <a href="#whyJoin">FAQ'S</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
         </div>
         <div className={styles.footerContact}>
           <h3>Contact Us</h3>
