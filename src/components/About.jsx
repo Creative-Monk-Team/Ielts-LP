@@ -69,7 +69,7 @@ let About = () => {
           </div>
           <h1>Empowering Your IELTS Journey to Success</h1>
           <p>
-            At Iletest, we specialize in helping students achieve their dream
+            At latest, we specialize in helping students achieve their dream
             scores in the IELTS exam. Our platform offers personalized
             preparation resources, expert guidance, and real-time practice
             tests, ensuring you are fully equipped for success. With a focus on
