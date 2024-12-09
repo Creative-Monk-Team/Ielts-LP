@@ -119,7 +119,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className={styles.testimonialsSection}>
+    <div className={styles.testimonialsSection} id='testimonials'>
       <div className={styles.testimonialsContentSection}>
         <h2 className={styles.testHeading}>Testimonials</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ut magnam reprehenderit velit illo commodi!</p>

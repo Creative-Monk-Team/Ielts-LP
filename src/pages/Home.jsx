@@ -48,15 +48,14 @@ let Home = () => {
         <Features />
         <Numbers />
         <Joining />
-        <Testimonial/>
-        <CoursesCard />
+        <Testimonial />
+        {/* <CoursesCard /> */}
         <Webinar />
         {/* <WhyChooseUs/> */}
         {/* <Explore /> */}
         <ContactForm />
         <Footer />
         <BottomCta />
-        
         {/* <Grid/> */}
         {/* <CSS /> */}
       </div>

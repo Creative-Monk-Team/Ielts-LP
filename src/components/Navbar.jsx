@@ -42,11 +42,11 @@ let Navbar = () => {
             <img src={logo} alt="Logo" className={styles.logo} />
           </a>
           <div className={styles.optionsDiv}>
-            <a href="#about">About Us</a>            
+            <a href="#about">About Us</a>
             <a href="#speaker">Speaker</a>
             <a href="#whyChooseUs">Why Choose Us</a>
-            <a href="#whyJoin">Why Join</a>
-            <a href="#courses">Courses</a>
+            <a href="#whyJoin">FAQ'S</a>
+            <a href="#testimonials">Testimonials</a>
             <a href="#contact">Contact</a>
           </div>
         </div>
@@ -95,22 +95,22 @@ let Navbar = () => {
           </div>
           <div className={styles.smallOptionsDiv}>
             <a href="#about" onClick={() => setShowMenu(false)}>
-            About Us
+              About Us
             </a>
             <a href="#speaker" onClick={() => setShowMenu(false)}>
-            Speaker
+              Speaker
             </a>
             <a href="#whyChooseUs" onClick={() => setShowMenu(false)}>
-            Why Choose Us
+              Why Choose Us
             </a>
             <a href="#whyJoin" onClick={() => setShowMenu(false)}>
-            Why Join
+              FAQ'S
             </a>
-            <a href="#courses" onClick={() => setShowMenu(false)}>
-            Courses
+            <a href="#testimonials" onClick={() => setShowMenu(false)}>
+              Testimonials
             </a>
             <a href="#contact" onClick={() => setShowMenu(false)}>
-            Contact
+              Contact
             </a>
           </div>
         </div>

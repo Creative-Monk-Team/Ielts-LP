@@ -3,11 +3,15 @@
   /* padding: 2rem; */
   padding: 100px 0px;
   /* background-color: #f9f9f9; */
-  background-image: linear-gradient(to right, rgb(252, 252, 252), var(--secondary-color-beige));
+  background-image: linear-gradient(
+    to right,
+    rgb(252, 252, 252),
+    var(--secondary-color-beige)
+  );
   position: relative;
 }
 
-.p3{
+.p3 {
   position: absolute;
   top: 50px;
   left: 100px;
@@ -16,7 +20,14 @@
   opacity: 0.03;
 }
 
-.p4{
+.faqDesc {
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.p4 {
   position: absolute;
   bottom: 50px;
   right: 100px;
@@ -25,7 +36,7 @@
   opacity: 0.02;
 }
 
-.joiningParent button{
+.joiningParent button {
   margin-top: 50px;
 }
 
@@ -55,14 +66,11 @@
 }
 
 .features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
   position: relative;
   top: 100px;
   opacity: 0;
   visibility: hidden;
+  margin-top: 30px;
 }
 
 .features.showAnimationSection {
@@ -72,41 +80,91 @@
   visibility: visible;
 }
 
-.feature {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 3.5rem 1.5rem;
-  width: 700px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.accordionHeader {
+  background-color: white;
+  width: 1440px;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.accordionHeader h4 {
+  line-height: 1.5;
+}
+
+.accordionContent {
+  background-color: white;
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: none;
+  max-height: 0px;
+  overflow: hidden;
+  margin-bottom: 0px;
+  padding: 0px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.showContent {
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  max-height: 600px;
+}
+
+.accordionContent p {
+  line-height: 1.7;
   text-align: left;
 }
 
-.feature .icon {
-  font-size: 2rem;
-  color: #6c63ff;
-  margin-bottom: 1rem;
-  text-align: center;
+.accordionHeader h4 {
+  font-size: 15px;
+  font-weight: 400;
 }
 
-.feature h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
+.plusIcon {
+  width: 20px;
+  height: 20px;
+  transform: rotate(0deg);
 }
 
-.feature p {
-  font-size: 0.9rem;
-  color: #555;
-  text-align: center;
-}
-.feature img {
-  width: 70px;
-  height: 70px;
+.activePlusIcon {
+  transform: rotate(180deg);
+  transition: 0.3s all ease-in-out;
 }
 
-@media all and (max-width: 750px) {
-  .feature {
+@media all and (max-width: 1500px) {
+  .accordionContent {
+    width: 1360px;
+  }
+
+  .accordionHeader {
+    width: 1360px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .accordionContent {
     width: 95vw;
+  }
+
+  .accordionHeader {
+    width: 95vw;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .faqDesc {
+    width: 95%;
   }
 }

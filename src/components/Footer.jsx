@@ -38,8 +38,8 @@ let Footer = () => {
             <a href="#about">About Us</a>
             <a href="#speaker">Speaker</a>
             <a href="#whyChooseUs" >Why Choose Us</a>
-            <a href="#whyJoin" >Why Join</a>
-            <a href="#courses">Courses</a>
+            <a href="#whyJoin" >FAQ'S</a>
+            <a href="#testimonials">Testimonials</a>
             <a href="#contact">Contact</a>
         </div>
         <div className={styles.footerContact}>
