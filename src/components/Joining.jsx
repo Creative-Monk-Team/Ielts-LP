@@ -83,12 +83,9 @@ let Joining = () => {
           isFirstView ? styles.showAnimationSection : ""
         }`}
       >
-        <h1 ref={aboutRef}>FAQ's Heading here</h1>
+        <h1 ref={aboutRef}>FAQ's</h1>
         <p className={styles.faqDesc}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, facilis
-          eveniet? Laudantium nemo omnis ullam necessitatibus quod. Commodi
-          architecto iusto laborum, nisi assumenda nostrum ea enim. Aliquid,
-          eligendi? Quisquam, facilis.
+        Have questions? Our FAQs section provides detailed answers to common inquiries, offering helpful information and support to guide you.
         </p>
       </div>
 
