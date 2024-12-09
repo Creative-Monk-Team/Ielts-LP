@@ -160,12 +160,12 @@
   .innerAbout {
     width: 900px;
     flex-direction: column;
-    row-gap: 100px;
+    row-gap: 50px;
   }
   .imageSection {
     width: 100%;
     position: relative;
-  }
+  } 
 
   .aboutContent {
     width: 100%;
@@ -190,6 +190,12 @@
 
   .imageDetailsSection {
     left: 220px;
+  }
+}
+
+@media all and (max-width: 767px){
+  .imageDetailsSection{
+    display: none !important;
   }
 }
 
