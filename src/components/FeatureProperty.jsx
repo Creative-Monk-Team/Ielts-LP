@@ -46,24 +46,17 @@ let FeatureProperty = () => {
             <div></div>
           </div>
           <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-            mollitia!
+          Meet the Webinar Leader
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            ad officiis consequuntur distinctio unde itaque eligendi suscipit
-            laboriosam quod nostrum quas et ea laudantium reiciendis
-            exercitationem omnis cupiditate pariatur laborum, saepe sapiente!
-            Inventore et rem voluptatem similique beatae dolores aliquam
-            maiores, distinctio nesciunt blanditiis mollitia praesentium odit,
-            natus exercitationem nemo!
+          <h4>Our webinar is led by [Instructor’s Name], a seasoned IELTS trainer with over [X] years of experience.</h4>
+          <ul>
+            <li><p>[Instructor’s Name] has successfully helped over 1,000+ students clear their IELTS exams and achieve their study abroad dreams.</p></li>
+            <li><p>Featured in top IELTS prep publications, they bring proven strategies and expert-level insights to help you pass with flying colors.</p> </li>
+          </ul>
+          {/* <p>
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            consectetur magni quisquam dolorem perspiciatis non fugit. Tenetur,
-            dolorum natus eaque nam inventore facere pariatur accusamus
-            aspernatur nesciunt quibusdam exercitationem eligendi?
-          </p>
+          </p> */}
           <Button text={"Book Your Slot Now"}/>
         </div>
         <div

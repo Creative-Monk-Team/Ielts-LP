@@ -139,7 +139,7 @@ const CoursesCard = () => {
       <div className={styles.container}>
         <h2 ref={aboutRef} className={`${styles.heading} ${styles.animationSection} ${
           isFirstView ? styles.showAnimationSection : ""
-        }`}>Upcoming Courses</h2>
+        }`}>Testimonials</h2>
         <div className={`${styles.cardContainer} ${styles.animationSection} ${
           isFirstView ? styles.showAnimationSection : ""
         }`}>

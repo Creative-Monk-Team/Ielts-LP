@@ -143,15 +143,12 @@ let Banner = () => {
             } ${isFirstView ? styles.showAnimationSection : ""}`}
            >
             <h1>
-                Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit.
+            Crack IELTS in Just ₹99 – Guaranteed Success with Bonuses Worth ₹5,000!
             </h1>
             {/* <div className={styles.outlinedText}>BOOST</div> */}
 
             <p>
-              Et beatae quo esse veniam iste aperiam facere tempora officia
-              animi ab molestiae repudiandae libero quae, error reprehenderit
-              alias ea atque perferendis!
+            Unlock your IELTS success with our exclusive 2-day webinar. Limited seats available!
             </p>
             <span className={styles.encquireNowButton}>
             <Button text={'Enquire Now'}/>

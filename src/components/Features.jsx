@@ -36,26 +36,30 @@ const Features = () => {
     <>
       <div className={styles.FeaturesParent} id="whyChooseUs">
         <div className={styles.FeaturesChild}>
-          <div className={`${styles.FeaturesImage} ${
-            styles.animationSection
-          } ${isFirstView ? styles.showAnimationSection : ""}`}
-          ref={aboutRef}>
+          <div
+            className={`${styles.FeaturesImage} ${styles.animationSection} ${
+              isFirstView ? styles.showAnimationSection : ""
+            }`}
+            ref={aboutRef}
+          >
             {/* <img className={styles.img2} src={featImg2} alt="" /> */}
             <img className={styles.img1} src={BannerImage4} alt="" />
           </div>
-          <div  className={`${styles.FeaturesContent} ${
-            styles.animationSection
-          } ${isFirstView ? styles.showAnimationSection : ""}`}>
+          <div
+            className={`${styles.FeaturesContent} ${styles.animationSection} ${
+              isFirstView ? styles.showAnimationSection : ""
+            }`}
+          >
             <div className={styles.yellowLineFlex}>
               <div></div>
               <h5>Elevate Your Learning</h5>
             </div>
-            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h1>Key Features & Benefits of Joining This Webinar</h1>
             <p className={styles.FeaturesContentPara}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Dignissimos cupiditate suscipit eius aut eveniet. Doloremque, eum
-              tempore! Excepturi nostrum aperiam commodi nulla nihil, animi ad
-              impedit accusantium in? Vel, cum.
+              Join our exclusive IELTS webinar to gain expert insights, proven
+              strategies, and practical tips for all test sections. Boost your
+              performance, access study materials, and interact with experienced
+              trainers to prepare confidently for a high band score.
             </p>
             <div className={styles.FeaturesListParent}>
               <div>

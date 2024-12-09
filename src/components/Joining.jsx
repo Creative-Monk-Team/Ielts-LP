@@ -43,8 +43,8 @@ let Joining = () => {
           isFirstView ? styles.showAnimationSection : ""
         }`}
       >
-        <h1 ref={aboutRef}>What Makes Joining Valuable</h1>
-        <h3>Become aware of the inside-out details of the IELTS Exam</h3>
+        <h1 ref={aboutRef}>FAQ's Heading here</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, facilis eveniet? Laudantium nemo omnis ullam necessitatibus quod. Commodi architecto iusto laborum, nisi assumenda nostrum ea enim. Aliquid, eligendi? Quisquam, facilis.</h3>
       </div>
       <div className={`${styles.features} ${styles.animationSection} ${
           isFirstView ? styles.showAnimationSection : ""

@@ -19,6 +19,7 @@ import CountdownTimer from "../components/CountdownTimer";
 import BottomCta from "../components/BottomCta";
 import Grid from "../components/Grid";
 import CSS from "../components/CSS";
+import Testimonial from "../components/Testimonial";
 
 let Home = () => {
   return (
@@ -47,6 +48,7 @@ let Home = () => {
         <Features />
         <Numbers />
         <Joining />
+        <Testimonial/>
         <CoursesCard />
         <Webinar />
         {/* <WhyChooseUs/> */}
@@ -54,6 +56,7 @@ let Home = () => {
         <ContactForm />
         <Footer />
         <BottomCta />
+        
         {/* <Grid/> */}
         {/* <CSS /> */}
       </div>
