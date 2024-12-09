@@ -65,19 +65,19 @@ const Features = () => {
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p>Lorem ipsum dolor amet.</p>
+              <p><b>Crack IELTS for Just ₹99:</b> Yes, you read that right! Our 2-day webinar is designed to give you everything you need to succeed, all for just ₹99. No hidden costs, no upsells.</p>
             </div>
             <div className={styles.FeaturesListParent}>
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p>Lorem ipsum dolor amet.</p>
+              <p><b>Comprehensive Guidance: </b> 	Get access to expert strategies and tips from the best IELTS instructors to help you clear the exam in your first attempt.</p>
             </div>
             <div className={styles.FeaturesListParent}>
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p>Lorem ipsum dolor amet.</p>
+              <p><b>Lifetime Access and Support:</b> You get continuous access to the materials and our expert community, ensuring you are supported until you achieve your IELTS success!</p>
             </div>
             <span className={styles.encquireNowButton}>
               <Button text={"Learn More"} />

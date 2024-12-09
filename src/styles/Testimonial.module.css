@@ -94,7 +94,7 @@
 }
 
 .clientReviewsOverflowSection {
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .clientTestimonialsSection {
@@ -102,7 +102,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: opacity 1s ease-in-out;
+  opacity: 1;  /* Start with the opacity set to 1 */
+  transition: opacity 0.3s ease-in-out;  /* This applies to both fadeIn and fadeOut */
 }
 
 .clientImageSection img {
@@ -159,13 +160,19 @@
   margin-left: 10px;
 }
 
-.clientTestimonialsSection {
-  opacity: 1; /* Start with reviews hidden */
+/* No need for a separate transition on fadeIn class */
+.clientTestimonialsSection.fadeOut {
+  opacity: 0; /* Fade out effect */
 }
 
 .clientTestimonialsSection.fadeIn {
-  opacity: 1; /* Fade in the review */
+  opacity: 1; /* Fade in effect */
 }
+
+.reviewPersonName {
+  margin-top: 20px;
+}
+
 
 /* Responsive styles */
 
@@ -229,5 +236,6 @@
   }
   .reviewPersonName{
     margin-top: 20px;
+    font-size: 14px;
   }
 }

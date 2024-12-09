@@ -55,7 +55,8 @@
 }
 
 .FeaturesListParent p {
-  margin-left: 20px;
+  margin-left: 10px;
+  text-align: left;
 }
 
 .learnMore {

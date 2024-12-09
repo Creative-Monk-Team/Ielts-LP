@@ -36,50 +36,52 @@ let About = () => {
   return (
     <div className={styles.about} id="about">
       <div className={styles.innerAbout}>
-        <div 
+        <div
           className={`${styles.imageSection} ${styles.animationSection} ${
             isFirstView ? styles.showAnimationSection : ""
           }`}
           ref={aboutRef}
         >
-          <img alt="First Image" className={styles.bigImage} src={BannerImage2} />
- 
+          <img
+            alt="First Image"
+            className={styles.bigImage}
+            src={BannerImage2}
+          />
+
           {/* <img alt="Bg Image" className={styles.bgImage} src={bg} /> */}
-          <div
-            className={styles.imageDetailsSection}
-          >
-            <h5>Lorem heading here</h5>
+          <div className={styles.imageDetailsSection}>
+            <h5>Your Path to IELTS Excellence Starts Here</h5>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
-              fugit quaerat eaque ipsum enim eos
+              Unlock your potential with Iletest's expert resources and
+              guidance, designed to help you ace the IELTS exam and achieve your
+              goals.
             </p>
           </div>
         </div>
-        <div className={`${styles.aboutContent} ${
-              styles.animationSection
-            } ${isFirstView ? styles.showAnimationSection : ""}`}>
+        <div
+          className={`${styles.aboutContent} ${styles.animationSection} ${
+            isFirstView ? styles.showAnimationSection : ""
+          }`}
+        >
           <div className={styles.yellowLineFlex}>
             <div></div>
-            <h5>Master IELTS Listening</h5>
+            <h5>Master IELTS </h5>
           </div>
-          <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-            mollitia!
-          </h1>
+          <h1>Empowering Your IELTS Journey to Success</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            ad officiis consequuntur distinctio unde itaque eligendi suscipit
-            laboriosam quod nostrum quas et ea laudantium reiciendis
-            exercitationem omnis cupiditate pariatur laborum, saepe sapiente!
-            Inventore et rem voluptatem similique beatae dolores aliquam
-            maiores, distinctio nesciunt blanditiis mollitia praesentium odit,
-            natus exercitationem nemo!
+            At Iletest, we specialize in helping students achieve their dream
+            scores in the IELTS exam. Our platform offers personalized
+            preparation resources, expert guidance, and real-time practice
+            tests, ensuring you are fully equipped for success. With a focus on
+            tailored learning, we help you build confidence and skills to
+            perform at your best.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            consectetur magni quisquam dolorem perspiciatis non fugit. Tenetur,
-            dolorum natus eaque nam inventore facere pariatur accusamus
-            aspernatur nesciunt quibusdam exercitationem eligendi?
+            Our mission is to simplify the IELTS preparation journey. By
+            providing cutting-edge tools, valuable insights, and a community of
+            support, we strive to make your learning experience both effective
+            and enjoyable. Join us today and take the first step toward
+            achieving your ultimate IELTS goals.
           </p>
           {/* <Button text={"Enquire Now"} /> */}
         </div>
