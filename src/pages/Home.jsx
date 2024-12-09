@@ -26,13 +26,13 @@ let Home = () => {
     <>
       <Helmet>
         <title>Prepeve</title>
-        <meta name="description" content="Description about IELTS here" />
+        <meta name="description" content="PrepEve provides online courses for the IELTS Academic and IELTS General Training tests." />
         <meta name="title" property="og:title" content="Prepeve" />
         <meta property="og:image" content={logo} />
         <meta property="og:image:type" content="image/png" />
         <meta
           property="og:description"
-          content="Description about IELTS here"
+          content="PrepEve provides online courses for the IELTS Academic and IELTS General Training tests."
         />
         <meta
           name="Keywords"

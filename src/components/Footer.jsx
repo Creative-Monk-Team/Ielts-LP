@@ -45,15 +45,15 @@ let Footer = () => {
           <h3>Contact Us</h3>
           <div>
             <img src={location} />
-            <p>Address</p>
+            <p>5307 Victoria Dr, Vancouver, BC V5P 3V6</p>
           </div>
           <div>
             <img src={phone} />
-            <p>Mobile Number</p>
+            <p>+1(604)6210601</p>
           </div>
           <div>
             <img src={mail} />
-            <p>Email</p>
+            <p>prepeve@gmail.com</p>
           </div>
         </div>
         <div>
@@ -63,21 +63,21 @@ let Footer = () => {
             us.
           </p>
           <div className={styles.socialDiv}>
-            <a href="#">
+            <a href="https://www.facebook.com/people/Prepeve-Revolutionizing-IELTS-Preparation/100064087447900/">
               <div className={styles.socialIcon}>
                 <img src={facebook} />
               </div>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/prepeve.classes/">
               <div className={styles.socialIcon}>
                 <img src={instagram} />
               </div>
             </a>
-            <a href="#">
+            {/* <a href="#">
               <div className={styles.socialIcon}>
                 <img src={linkedin} />
               </div>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import bigImage from "../assets/banner2.jpg";
 import smallImage from "../assets/banner3.jpg";
 import BannerImage2 from "../assets/banner02_Recent.jpg";
 import Button from "./Button";
+import img from "../assets/aboutUs.png";
 
 let About = () => {
   let aboutRef = useRef(null);
@@ -45,7 +46,7 @@ let About = () => {
           <img
             alt="First Image"
             className={styles.bigImage}
-            src={BannerImage2}
+            src={img}
           />
 
           {/* <img alt="Bg Image" className={styles.bgImage} src={bg} /> */}

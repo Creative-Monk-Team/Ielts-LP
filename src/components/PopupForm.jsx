@@ -91,8 +91,8 @@ const PopupForm = () => {
           },
           body: JSON.stringify({
             from: formData.email,
-            to: "creativemonktesting@gmail.com",
-            subject: "Contact Form Submission",
+            to: "prepeve@gmail.com",
+            subject: "Contact Form Submission - Prepeve Webinar",
             text: `Name: ${formData.name}\nEmail: ${formData.email}\nContact: ${formData.contact}\nExam Type: ${formData.examType}`,
           }),
         }
