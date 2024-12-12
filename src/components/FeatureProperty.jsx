@@ -49,8 +49,7 @@ let FeatureProperty = () => {
           </div>
           <h1>Meet the Webinar Leader</h1>
           <h4>
-            Our webinar is led by Ms. Sanjita, a seasoned IELTS trainer
-            with over [X] years of experience.
+          Our webinar is led by Ms. Sanjita, a highly proficient IELTS trainer renowned for her expertise in training and explaining complex concepts with clarity and effectiveness.
           </h4>
           <ul>
             <li>
