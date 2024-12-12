@@ -7,7 +7,7 @@ let Button = ({ text }) => {
   return (
     <button
       onClick={() => {
-        setShowForm(true);
+        window.location.href="https://pages.razorpay.com/pl_PGpnUOOdwJUDnD/view";
       }}
       className={styles.buttonComponent}
     >
