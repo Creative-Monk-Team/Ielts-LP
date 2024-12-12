@@ -17,7 +17,7 @@ const CountdownTimer = () => {
     let mm = String(today.getMonth() + 1).padStart(2, "0");
     let yyyy = today.getFullYear();
     let nextYear = yyyy + 1;
-    let dayMonth = "12/31/";
+    let dayMonth = "12/21/";
     let birthday = dayMonth + yyyy;
 
     today = mm + "/" + dd + "/" + yyyy;

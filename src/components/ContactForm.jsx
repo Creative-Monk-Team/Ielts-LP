@@ -127,7 +127,7 @@ const ContactForm = () => {
 
     try {
       const response = await fetch(
-        "https://ibc-nodemailer.onrender.com/send-email",
+        "https://brightlight-node.onrender.com/send-email",
         {
           method: "POST",
           headers: {

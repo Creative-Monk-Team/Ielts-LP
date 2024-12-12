@@ -328,7 +328,7 @@ input::placeholder {
 @media all and (max-width: 1050px) {
   .ContactFormChild {
     width: 900px;
-    flex-direction: column-reverse;
+    flex-direction: column;
     row-gap: 50px;
   }
   .img1 {
