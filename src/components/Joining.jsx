@@ -64,6 +64,16 @@ let Joining = () => {
       answer:
         " Simply click on the “Book Now” button below to reserve your spot. Hurry, as seats are limited!",
     },
+    {
+      question: "Who Should Attend?",
+      answer:
+        " This webinar is designed for IELTS aspirants aiming for a score of 8777 or higher, whether you're a first-time test taker seeking essential preparation tips or a repeat test taker looking to identify key areas for improvement, with a focus on excelling in the Writing and Speaking sections for both Academic and General Training candidates",
+    },
+    {
+      question: "Who Should not Attend?",
+      answer:
+        " If any Person is not serious about Cracking the IELTS Test",
+    },
   ];
 
   const toggleAccordion = (index) => {

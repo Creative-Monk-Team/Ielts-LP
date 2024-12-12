@@ -49,13 +49,15 @@ let FeatureProperty = () => {
           </div>
           <h1>Meet the Webinar Leader</h1>
           <h4>
-          Our webinar is led by Ms. Sanjita, a highly proficient IELTS trainer renowned for her expertise in training and explaining complex concepts with clarity and effectiveness.
+            Our webinar is led by Ms. Sanjita, a highly proficient IELTS trainer
+            renowned for her expertise in training and explaining complex
+            concepts with clarity and effectiveness.
           </h4>
           <ul>
             <li>
               <p>
-                Ms. Sanjita has successfully helped over 1,000+ students
-                clear their IELTS exams and achieve their study abroad dreams.
+                Assisted more than 100,000 students globally, providing expert
+                guidance and support in their educational and career journeys.
               </p>
             </li>
             <li>
@@ -64,6 +66,20 @@ let FeatureProperty = () => {
                 strategies and expert-level insights to help you pass with
                 flying colors.
               </p>{" "}
+            </li>
+            <li>
+              <p>
+                Over a decade of professional experience in training, coaching,
+                and mentoring individuals to achieve their personal and
+                professional goals.
+              </p>
+            </li>
+            <li>
+              <p>
+                Successfully helped 100+ clients secure visa approvals,
+                navigating the complexities of immigration processes and
+                ensuring their international opportunities.
+              </p>
             </li>
           </ul>
           {/* <p>
@@ -80,7 +96,7 @@ let FeatureProperty = () => {
           <img alt="First Image" className={styles.bigImage} src={speaker} />
           <div className={styles.overlayDiv}>
             <h4>Certified by</h4>
-            <img className={styles.brLogo} src={britishCouncil}/>
+            <img className={styles.brLogo} src={britishCouncil} />
           </div>
         </div>
       </div>

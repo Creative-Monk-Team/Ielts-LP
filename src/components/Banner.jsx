@@ -143,8 +143,10 @@ let Banner = () => {
             } ${isFirstView ? styles.showAnimationSection : ""}`}
           >
             <h1>
-              Crack <span>IELTS in Just ₹99</span> – Guaranteed Success with
-              Bonuses Worth <span>₹5,000!</span>
+              {/* Crack <span>IELTS in Just ₹99</span> – Guaranteed Success with
+              Bonuses Worth <span>₹5,000!</span> */}
+              Learn The Right Strategies To<span> Crack the IELTS Test </span>with{" "}
+              <span>7+</span> band score.
             </h1>
             {/* <div className={styles.outlinedText}>BOOST</div> */}
 
@@ -153,7 +155,7 @@ let Banner = () => {
               Limited seats available!
             </p>
             <span className={styles.encquireNowButton}>
-              <Button text={"Enquire Now"} />
+              <Button text={"JOIN NOW FOR Rs.99"} />
             </span>
             <CountdownTimer />
           </div>

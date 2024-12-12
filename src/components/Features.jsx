@@ -54,7 +54,7 @@ const Features = () => {
               <div></div>
               <h5>Elevate Your Learning</h5>
             </div>
-            <h1>Key Features & Benefits of Joining This Webinar</h1>
+            <h1>Reasons to Attend This Webinar</h1>
             <p className={styles.FeaturesContentPara}>
               Join our exclusive IELTS webinar to gain expert insights, proven
               strategies, and practical tips for all test sections. Boost your
@@ -65,22 +65,40 @@ const Features = () => {
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p><b>Crack IELTS for Just ₹99:</b> Yes, you read that right! Our 2-day webinar is designed to give you everything you need to succeed, all for just ₹99. No hidden costs, no upsells.</p>
+              <p><b>Expert guidance:</b> Learn from certified IELTS instructors with years of experience helping candidates succeed.</p>
             </div>
             <div className={styles.FeaturesListParent}>
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p><b>Comprehensive Guidance: </b> 	Get access to expert strategies and tips from the best IELTS instructors to help you clear the exam in your first attempt.</p>
+              <p><b>Proven Strategies:</b> Discover tried-and-tested tips to boost your performance in both the writing and speaking sections.</p>
             </div>
             <div className={styles.FeaturesListParent}>
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p><b>Lifetime Access and Support:</b> You get continuous access to the materials and our expert community, ensuring you are supported until you achieve your IELTS success!</p>
+              <p><b>Boost Confidence:</b>Improve your fluency, vocabulary, and coherence to speak with confidence during the speaking exam.</p>
+            </div>
+            <div className={styles.FeaturesListParent}>
+              <div>
+                <button className={styles.checkmarkButton}>✓</button>
+              </div>{" "}
+              <p><b>Master Writing:</b> Understand how to structure your essays, respond to writing tasks, and impress examiners with clear and effective communication</p>
+            </div>
+            <div className={styles.FeaturesListParent}>
+              <div>
+                <button className={styles.checkmarkButton}>✓</button>
+              </div>{" "}
+              <p><b>Interactive Sessions:</b>Engage with live Q&A to get personalized advice and real-time feedback.</p>
+            </div>
+            <div className={styles.FeaturesListParent}>
+              <div>
+                <button className={styles.checkmarkButton}>✓</button>
+              </div>{" "}
+              <p><b>Time Management Tips:</b>Learn how to manage your time effectively during both sections to maximize your score.</p>
             </div>
             <span className={styles.encquireNowButton}>
-              <Button text={"Learn More"} />
+              <Button text={"Join Now"} />
             </span>
           </div>
         </div>
