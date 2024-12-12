@@ -11,21 +11,20 @@ const CountdownTimer = () => {
   const [countdownVisible, setCountdownVisible] = useState(true);
 
   useEffect(() => {
-    // Get today's date and determine the next birthday
+    // Get today's date and determine the next 21st December at 6 PM
     let today = new Date();
-    let dd = String(today.getDate()).padStart(2, "0");
-    let mm = String(today.getMonth() + 1).padStart(2, "0");
     let yyyy = today.getFullYear();
     let nextYear = yyyy + 1;
-    let dayMonth = "12/21/";
-    let birthday = dayMonth + yyyy;
 
-    today = mm + "/" + dd + "/" + yyyy;
+    // Define the target date as 21st December, 6:00 PM (18:00) in either the current or next year
+    let birthday = new Date(`${yyyy}-12-21T18:00:00`);
+    
+    // If today's date is past 21st December, use the next year
     if (today > birthday) {
-      birthday = dayMonth + nextYear;
+      birthday = new Date(`${nextYear}-12-21T18:00:00`);
     }
 
-    const countDownDate = new Date(birthday).getTime();
+    const countDownDate = birthday.getTime();
 
     // Update the countdown every second
     const interval = setInterval(() => {
@@ -34,14 +33,14 @@ const CountdownTimer = () => {
 
       setDays(Math.floor(distance / (1000 * 60 * 60 * 24)));
       setHours(
-        Math.floor((distance % (1000 * 60 * 60 * 10)) / (1000 * 60 * 60))
+        Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
       );
       setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
       setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
 
       // If the countdown is over, hide the countdown and show the content
       if (distance < 0) {
-        setHeadline("");
+        setHeadline("The countdown is over!");
         setCountdownVisible(false);
         clearInterval(interval);
       }
