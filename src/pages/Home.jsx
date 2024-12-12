@@ -20,6 +20,7 @@ import BottomCta from "../components/BottomCta";
 import Grid from "../components/Grid";
 import CSS from "../components/CSS";
 import Testimonial from "../components/Testimonial";
+import WhatWillYouLearn from "../components/WhatWillYouLearn";
 
 let Home = () => {
   return (
@@ -48,12 +49,14 @@ let Home = () => {
         <Features />
         <Numbers />
         <Joining />
+        <WhatWillYouLearn/>
         <Testimonial />
         {/* <CoursesCard /> */}
         <Webinar />
         {/* <WhyChooseUs/> */}
         {/* <Explore /> */}
-        <ContactForm />
+        {/* <ContactForm /> */}
+        
         <Footer />
         <BottomCta />
         {/* <Grid/> */}

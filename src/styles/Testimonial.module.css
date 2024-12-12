@@ -84,7 +84,7 @@
 } */
 .testimonialsSection {
   padding: 80px 0;
-  background-color: #ffffff;
+  background-color: var(--secondary-color-beige);
 }
 
 .testimonialsContentSection {
