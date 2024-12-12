@@ -23,8 +23,13 @@ body {
   --primary-color-golden: #de9e53;
   --primary-color-white: #ffffff;
   --secondary-color-beige: #f3f3f3;
-  --primary-color-blue:#02359e;
-   --primary-color-coral:#ff615d;
+  --primary-color-coral: #ff615d;
+
+
+  --primary-color-mustard: #f0b725;
+  --primary-color-blue: #81cad6;
+  --primary-color-green: #6a961f;
+  --primary-color-orange: #f17f56;
 }
 
 h1 {

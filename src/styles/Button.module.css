@@ -3,7 +3,7 @@
   padding: 20px 40px;
   border-radius: 1dvb;
   border: none;
-  background-color:#f17f56;
+  background-color: var(--primary-color-orange);
   font-size: 15px;
   cursor: pointer;
   font-weight: 600;
@@ -14,7 +14,7 @@
 
 .buttonComponent:hover {
   color: var(--primary-color-white);
-  background-color:#f17f56;
+  background-color: var(--primary-color-orange);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   animation: bounceAnimation 0.6s ease;
   /* border: 1px solid #f17f56; */

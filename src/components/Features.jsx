@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import Button from "./Button";
 import featImg1 from "../assets/featImg1.jpg";
 import featImg2 from "../assets/featImg2.jpg";
-import BannerImage4 from "../assets/banner04_Recent.jpg";
+import BannerImage4 from "../assets/benefits1.png";
 
 const Features = () => {
   let aboutRef = useRef(null);

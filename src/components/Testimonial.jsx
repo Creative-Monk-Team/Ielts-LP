@@ -176,14 +176,14 @@ const Testimonial = () => {
         {/* Navigation buttons */}
         <div className={styles.reviewsPaginationSection}>
           <button className={styles.prevButton} onClick={handlePreviousReview}>
-            <FaArrowLeft size={20} />
+            <FaArrowLeft size={15} color={"#ffffff"}/>
           </button>
           <p>{`${currentReview + 1} / ${reviewData.length}`}</p>
           <button className={styles.nextButton} onClick={handleNextReview}>
-            <FaArrowRight size={20} />
+            <FaArrowRight size={15} color={"#ffffff"}/>
           </button>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };

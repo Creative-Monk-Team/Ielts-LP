@@ -2,8 +2,8 @@
   padding: 100px 0px;
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6) 
     ),
     url("../assets/banner02_Recent.jpg");
   background-repeat: no-repeat;
@@ -17,8 +17,17 @@
   margin: auto;
   text-align: center;
   color: white;
-}
+} 
 
+.containerInside  h1{
+  font-weight: 400 !important;
+}
+ 
+.containerInside  h1 span{
+  font-weight: 1000;
+  color: #fecd29;
+}
+ 
 .containerInside p {
   width: 80%;
   margin: auto;

@@ -102,8 +102,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  opacity: 1;  /* Start with the opacity set to 1 */
-  transition: opacity 0.3s ease-in-out;  /* This applies to both fadeIn and fadeOut */
+  opacity: 1; /* Start with the opacity set to 1 */
+  transition: opacity 0.3s ease-in-out; /* This applies to both fadeIn and fadeOut */
 }
 
 .clientImageSection img {
@@ -137,9 +137,22 @@
   background-color: transparent;
   border: none;
   color: #333;
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
   transition: color 0.3s ease;
+  padding: 10px;
+  background-color: var(--primary-color-black);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviewsPaginationSection button svg {
+  width: 15px;
+  height: 15px;
 }
 
 .reviewsPaginationSection button:hover {
@@ -148,7 +161,7 @@
 
 .reviewsPaginationSection p {
   margin: 0 20px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -173,6 +186,14 @@
   margin-top: 20px;
 }
 
+.reviewDetails h4 {
+  font-weight: 400;
+}
+
+.reviewDetails h3 {
+  color: var(--primary-color-orange);
+  font-size: 18px; 
+}
 
 /* Responsive styles */
 
@@ -234,7 +255,7 @@
   .reviewsPaginationSection p {
     font-size: 16px;
   }
-  .reviewPersonName{
+  .reviewPersonName {
     margin-top: 20px;
     font-size: 14px;
   }

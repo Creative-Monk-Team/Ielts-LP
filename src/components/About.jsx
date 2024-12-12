@@ -5,7 +5,7 @@ import bigImage from "../assets/banner2.jpg";
 import smallImage from "../assets/banner3.jpg";
 import BannerImage2 from "../assets/banner02_Recent.jpg";
 import Button from "./Button";
-import img from "../assets/aboutUs.png";
+import img from "../assets/empowerStudent1.png";
 
 let About = () => {
   let aboutRef = useRef(null);

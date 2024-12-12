@@ -52,6 +52,10 @@
   visibility: hidden;
 }
 
+.FeaturePropertyContent ul{
+  margin-left: 20px;
+}
+
 .FeaturePropertyContent * {
   position: relative;
   z-index: 2;

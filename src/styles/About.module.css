@@ -113,6 +113,10 @@
   font-size: 12px;
 }
 
+.imageDetailsSection h5{
+ color: var(--primary-color-orange);
+}
+
 .yellowLineFlex {
   display: flex;
   align-items: center;
@@ -123,11 +127,11 @@
 .yellowLineFlex div {
   width: 50px;
   height: 2px;
-  background-color: #f17f56;
+  background-color: var(--primary-color-orange);
 }
 
 .yellowLineFlex h5 {
-  color:#f17f56;
+  color:var(--primary-color-orange);
 }
 
 .aboutContent h1 {

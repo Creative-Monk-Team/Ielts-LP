@@ -29,11 +29,11 @@
 // export default ContactForm;
 
 import styles from "../styles/ContactForm.module.css";
-import WhyImage from "../assets/contactUs.png";
+import WhyImage from "../assets/contactUs02.png";
 import { useState, useEffect, useRef, useContext } from "react";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import { AuthContext } from "../context/AuthContextProvider";
-import p1 from "../assets/p1.png";
+import p1 from "../assets/contactUs02.png";
 
 const ContactForm = () => {
   const [showForm, setShowForm, showWaitingLoading, setShowWaitingLoading] =
