@@ -98,14 +98,14 @@ const Testimonial = () => {
       review:
         "I cleared IELTS in my first attempt, and I owe it all to the strategies and guidance shared in this webinar. The mock test was a game-changer!",
       review_stars: 5,
-      person_name: "Manpreet Kaur, IELTS Achiever",
+      person_name: "Ravi Sharma, IELTS Achiever",
     },
     {
       image: Img2,
       review:
         "I never thought cracking IELTS would be this easy! The cheat sheet and AI tools made my preparation so efficient. Thank you, Prepeve!",
       review_stars: 4,
-      person_name: "Ravi Sharma, First Attempt Success",
+      person_name: "Manpreet Kaur, First Attempt Success",
     },
     {
       image: Img3,
