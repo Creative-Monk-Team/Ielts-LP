@@ -10,7 +10,7 @@ import styles from "../styles/Banner.module.css";
 import Button from "./Button";
 import CountdownTimer from "../components/CountdownTimer";
 
-let Banner = () => {
+let Banner2 = () => {
   let images = [BannerRecentImg];
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -145,14 +145,12 @@ let Banner = () => {
             <h1>
               {/* Crack <span>IELTS in Just ₹99</span> – Guaranteed Success with
               Bonuses Worth <span>₹5,000!</span> */}
-              Learn The Right Strategies To<span> Crack the IELTS Test </span>with{" "}
-              <span>7+</span> band score.
+              Crack <span>IELTS in Just ₹99</span> – Limited Seats Left!<span> </span>
             </h1>
             {/* <div className={styles.outlinedText}>BOOST</div> */}
 
             <p>
-              Unlock your IELTS success with our exclusive 2-day webinar.
-              Limited seats available!
+            Join the Prepeve Webinar today and access a comprehensive IELTS preparation strategy with bonuses valued at ₹5,000 – all for ₹99!
             </p>
             <span className={styles.encquireNowButton}>
               <Button text={"JOIN NOW FOR Rs 99"} />
@@ -198,4 +196,4 @@ let Banner = () => {
   );
 };
 
-export default Banner;
+export default Banner2;

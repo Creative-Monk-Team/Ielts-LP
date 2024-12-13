@@ -8,7 +8,7 @@ const Webinar = () => {
         <div className={styles.containerInside}>
           <h1>Ready to transform your <span>IELTS</span> preparation?</h1>  
           <p>Book your spot now for just ₹99 and unlock a world of possibilities!</p>
-          <Button text={"Book Now"}/>
+          <Button text={"JOIN NOW FOR Rs 99"}/>
         </div>
       </div>
     </>

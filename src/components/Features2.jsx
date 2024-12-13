@@ -5,7 +5,7 @@ import featImg1 from "../assets/featImg1.jpg";
 import featImg2 from "../assets/featImg2.jpg";
 import BannerImage4 from "../assets/benefits1.png";
 
-const Features = () => {
+const Features2 = () => {
   let aboutRef = useRef(null);
   let [isFirstView, setIsFirstView] = useState(false);
 
@@ -65,37 +65,25 @@ const Features = () => {
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p><b>Expert guidance:</b> Learn from certified IELTS instructors with years of experience helping candidates succeed.</p>
+              <p><b>Guaranteed IELTS Success:</b> This isn’t just any webinar. It’s a success blueprint! Get the exact steps to clear IELTS with ease.</p>
             </div>
             <div className={styles.FeaturesListParent}>
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p><b>Proven Strategies:</b> Discover tried-and-tested tips to boost your performance in both the writing and speaking sections.</p>
+              <p><b>IELTS Cheat Sheet:</b> Quickly learn what you must do to pass.</p>
             </div>
             <div className={styles.FeaturesListParent}>
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p><b>Boost Confidence:</b>Improve your fluency, vocabulary, and coherence to speak with confidence during the speaking exam.</p>
+              <p><b>Lifetime Access and Support:</b>You get continuous access to the materials and our expert community, ensuring you are supported until you achieve your IELTS success!</p>
             </div>
             <div className={styles.FeaturesListParent}>
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
               <p><b>Master Writing:</b> Understand how to structure your essays, respond to writing tasks, and impress examiners with clear and effective communication</p>
-            </div>
-            <div className={styles.FeaturesListParent}>
-              <div>
-                <button className={styles.checkmarkButton}>✓</button>
-              </div>{" "}
-              <p><b>Interactive Sessions:</b>Engage with live Q&A to get personalized advice and real-time feedback.</p>
-            </div>
-            <div className={styles.FeaturesListParent}>
-              <div>
-                <button className={styles.checkmarkButton}>✓</button>
-              </div>{" "}
-              <p><b>Time Management Tips:</b>Learn how to manage your time effectively during both sections to maximize your score.</p>
             </div>
             <span className={styles.encquireNowButton}>
               <Button text={"JOIN NOW FOR Rs 99"} />
@@ -106,4 +94,4 @@ const Features = () => {
     </>
   );
 };
-export default Features;
+export default Features2;

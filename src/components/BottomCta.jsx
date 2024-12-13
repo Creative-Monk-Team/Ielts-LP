@@ -22,7 +22,7 @@ let BottomCta = () => {
 
   return (
     <div className={`${styles.bottomCta} ${showCta ? styles.showCta : null}`}>
-      <Button text={"Book Your Slot Now"} />
+      <Button text={"JOIN NOW FOR Rs 99"} />
     </div>
   );
 };

@@ -86,7 +86,7 @@ let FeatureProperty = () => {
           </p>
           <p>
           </p> */}
-          <Button text={"Book Your Slot Now"} />
+          <Button text={"JOIN NOW FOR Rs 99"} />
         </div>
         <div
           className={`${styles.imageSection} ${styles.animationSection} ${
