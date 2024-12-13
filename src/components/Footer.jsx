@@ -43,14 +43,14 @@ let Footer = () => {
         </div>
         <div className={styles.footerContact}>
           <h3>Contact Us</h3>
-          <div>
+          {/* <div>
             <img src={location} />
             <p>5307 Victoria Dr, Vancouver, BC V5P 3V6</p>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <img src={phone} />
             <p>+1(604)6210601</p>
-          </div>
+          </div> */}
           <div>
             <img src={mail} />
             <p>prepeve@gmail.com</p>
