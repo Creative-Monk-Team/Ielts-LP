@@ -36,8 +36,9 @@ let Footer = () => {
           <h3>Quick Links</h3>
           <a href="#about">About Us</a>
           <a href="#speaker">Speaker</a>
-          <a href="#whyChooseUs">Why Choose Us</a>
+          <a href="#whyChooseUs">Why Join Us</a>
           <a href="#whyJoin">FAQ'S</a>
+          <a href="#whatLearn">Schedule</a>
           <a href="#testimonials">Testimonials</a>
           {/* <a href="#contact">Contact</a> */}
         </div>

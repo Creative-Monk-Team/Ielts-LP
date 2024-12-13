@@ -44,8 +44,9 @@ let Navbar = () => {
           <div className={styles.optionsDiv}>
             <a href="#about">About Us</a>
             <a href="#speaker">Speaker</a>
-            <a href="#whyChooseUs">Why Choose Us</a>
+            <a href="#whyChooseUs">Why Join Us</a>
             <a href="#whyJoin">FAQ'S</a>
+            <a href="#whatLearn">Schedule</a>
             <a href="#testimonials">Testimonials</a>
             {/* <a href="#contact">Contact</a> */}
           </div>
@@ -101,11 +102,12 @@ let Navbar = () => {
               Speaker
             </a>
             <a href="#whyChooseUs" onClick={() => setShowMenu(false)}>
-              Why Choose Us
+              Why Join Us
             </a>
             <a href="#whyJoin" onClick={() => setShowMenu(false)}>
               FAQ'S
             </a>
+            <a href="#whatLearn" onClick={() => setShowMenu(false)}>Schedule</a>
             <a href="#testimonials" onClick={() => setShowMenu(false)}>
               Testimonials
             </a>

@@ -40,7 +40,7 @@ const WhatWillYouLearn = () => {
     }, []);
   
     return (
-      <div className={styles.container}>
+      <div className={styles.container} id="whatLearn">
         <div className={styles.heading}>
           <h1>What Will You Learn in <span>2 Days?</span></h1>
           <h3>Here’s What You’ll Learn in Just 2 Days</h3>
