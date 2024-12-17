@@ -76,24 +76,8 @@ const Features = () => {
               </div>{" "}
               <p><b>Boost Confidence:</b>Improve your fluency, vocabulary, and coherence to speak with confidence during the speaking exam.</p>
             </div>
-            <div className={styles.FeaturesListParent}>
-              <div>
-                <button className={styles.checkmarkButton}>✓</button>
-              </div>{" "}
-              <p><b>Master Writing:</b> Understand how to structure your essays, respond to writing tasks, and impress examiners with clear and effective communication</p>
-            </div>
-            <div className={styles.FeaturesListParent}>
-              <div>
-                <button className={styles.checkmarkButton}>✓</button>
-              </div>{" "}
-              <p><b>Interactive Sessions:</b>Engage with live Q&A to get personalized advice and real-time feedback.</p>
-            </div>
-            <div className={styles.FeaturesListParent}>
-              <div>
-                <button className={styles.checkmarkButton}>✓</button>
-              </div>{" "}
-              <p><b>Time Management Tips:</b>Learn how to manage your time effectively during both sections to maximize your score.</p>
-            </div>
+ 
+ 
             <span className={styles.encquireNowButton}>
               <Button text={"JOIN NOW FOR Rs 99"} />
             </span>

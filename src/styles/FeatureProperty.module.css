@@ -31,7 +31,8 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .innerFeaturePropertyDiscrip  {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+  font-weight: 400 !important;
   line-height: 22px;
 }
 .innerFeaturePropertyDiscrip2  {
@@ -243,6 +244,12 @@
 
   .smallImage {
     right: -10px;
+  }
+}
+
+@media all and (max-width: 767px){
+  .innerFeatureProperty{
+    padding: 50px 2.5%;
   }
 }
 

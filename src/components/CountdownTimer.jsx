@@ -18,7 +18,7 @@ const CountdownTimer = () => {
 
     // Define the target date as 21st December, 6:00 PM (18:00) in either the current or next year
     let birthday = new Date(`${yyyy}-12-21T18:00:00`);
-    
+
     // If today's date is past 21st December, use the next year
     if (today > birthday) {
       birthday = new Date(`${nextYear}-12-21T18:00:00`);

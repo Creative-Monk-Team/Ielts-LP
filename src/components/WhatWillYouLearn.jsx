@@ -60,7 +60,7 @@ const WhatWillYouLearn = () => {
                     </div>
                     <div className={styles.card}>
                         <div className={styles.cardNumber}>02</div>
-                        <div className={styles.cardContent}>Learn Strategies for Speaking Part 1</div>
+                        <div className={styles.cardContent}>Learn Strategies for Speaking Part-1</div>
                     </div>
                     <div className={styles.card}>
                         <div className={styles.cardNumber}>03</div>

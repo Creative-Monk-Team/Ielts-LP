@@ -44,9 +44,8 @@ let FeatureProperty = () => {
         >
           <h1>Meet the Webinar Leader</h1>
           <h4 className={styles.innerFeaturePropertyDiscrip}>
-            Our webinar is led by Ms. Sanjita, a highly proficient IELTS trainer
-            renowned for her expertise in training and explaining complex
-            concepts with clarity and effectiveness.
+            Our webinar is led by Ms. Sanjita, an expert IELTS trainer known for
+            her clear and effective teaching.
           </h4>
           <p className={styles.innerFeaturePropertyDiscrip2}>
             With over a decade of experience, we've assisted more than 100,000

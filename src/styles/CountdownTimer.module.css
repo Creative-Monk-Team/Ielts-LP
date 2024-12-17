@@ -45,33 +45,6 @@ ul {
   font-family: "GtSectra", sans-serif !important;
 }
 
-@media all and (max-width: 768px) {
-  .countdownTimer_headline {
-    font-size: calc(1.5rem * var(--smaller));
-  }
-
-  .countdownTimer_li {
-    font-size: 13px;
-  }
-
-  .countdownTimer_li span {
-    font-size: 50px;
-  }
-}
-
-@media all and (max-width: 410px) {
-  .countdownTimer_countdown ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-
-  .countdownTimer_li {
-    padding: 0.5em;
-    width: 70px;
-  }
-}
 .timerHeader {
   margin-top: 40px;
   margin-bottom: 10px;
@@ -91,4 +64,41 @@ ul {
 
 .dateDisplay2 {
   margin: 0;
+}
+
+@media all and (max-width: 768px) {
+  .countdownTimer_headline {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+
+  .countdownTimer_li {
+    font-size: 13px;
+  }
+
+  .countdownTimer_li span {
+    font-size: 30px;
+  }
+
+  .dateDisplay {
+    font-size: 12px !important;
+
+  }
+  
+  .dateDisplay2 {
+    font-size: 12px !important;
+  }
+}
+
+@media all and (max-width: 410px) {
+  .countdownTimer_countdown ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .countdownTimer_li {
+    padding: 0.5em;
+    width: 70px;
+  }
 }

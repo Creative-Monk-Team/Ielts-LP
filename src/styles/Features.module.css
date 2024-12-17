@@ -219,4 +219,7 @@
   .FeaturesChild {
     width: 95vw;
   }
+  .FeaturesParent {
+    padding: 40px 0px;
+  }
 }
