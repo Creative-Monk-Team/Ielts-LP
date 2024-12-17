@@ -41,15 +41,12 @@ const WhatWillYouLearn = () => {
     <div className={styles.container} id="whatLearn">
       <div className={styles.heading}>
         <h1>
-          Unlock Your Potential in <span>2 Action-Packed Days!</span>
+          Unlock Your Potential in <span>2 Days!</span>
         </h1>
         <h3>
-          Join our <span>Crash Course</span> and Achieve Rapid Results
+          Join our <span>Crash Course</span>for rapid IELTS success with
+          step-by-step guidance and live practice sessions.
         </h3>
-        <p className={styles.subtitle}>
-          Master essential skills with step-by-step guidance and live practice
-          sessions to boost your IELTS prep!
-        </p>
       </div>
 
       <div
