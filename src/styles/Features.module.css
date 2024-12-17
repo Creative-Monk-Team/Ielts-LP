@@ -222,4 +222,8 @@
   .FeaturesParent {
     padding: 40px 0px;
   }
+  .FeaturesContent h1 {
+    font-size: 25px;
+  }
+  
 }
