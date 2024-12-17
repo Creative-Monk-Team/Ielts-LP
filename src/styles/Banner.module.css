@@ -457,8 +457,16 @@
 
 @media all and (max-width: 500px){
   .headingText{
-    font-size: 25px !important;
+    font-size: 28px !important;
   }
+
+  .highlight {
+    font-size: 28px !important;
+  }
+}
+
+.headingText span{
+  font-weight: 800 !important;
 }
 
 /* Left Content Section */
@@ -467,7 +475,7 @@
   text-align: left;
 }
 
-.contentSection h1 {
+.contentSection .headingText {
   /* font-size: 2.2rem; */
   color: #333;
   margin-bottom: 10px;
@@ -574,6 +582,18 @@
   border-radius: 4px;
 }
 
+.card div{
+  display: flex;
+}
+
+.card .icon{
+  display: inline;
+}
+
+.card .value{
+  display: inline;
+}
+
 @media all and (max-width: 1400px) {
   .bannerContainer {
     width: 1240px;
@@ -654,7 +674,7 @@
   text-align: center;
   padding: 15px 20px;
   width: 200px;
-  height: 150px;
+  height: 100px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   align-items: center;
@@ -670,7 +690,7 @@
 
 /* Icon Styling */
 .icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #5a5af7;
 }
 
@@ -684,7 +704,7 @@
 
 /* Label Styling */
 .label {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #555;
 }
 
@@ -733,7 +753,7 @@
   .card {
     padding: 15px 10px;
     width: 200px;
-    height: 120px;
+    height: 100px;
   }
 }
 

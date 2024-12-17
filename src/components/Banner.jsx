@@ -108,21 +108,26 @@ const Banner = () => {
           {/* Left Section */}
           <div className={styles.contentSection}>
             <h1 className={styles.headingText}>
-              Learn The Right Strategies To{" "}
-              <span className={styles.highlight}>Crack the IELTS Test</span>{" "}
-              with band score. <span className={styles.highlight}>7+</span> band score.
+              Learn strategies to{" "}
+              <h1 className={styles.highlight}>achieve a 7+</h1> band score
+              on the <h1 className={styles.highlight}>IELTS test.</h1>
             </h1>
 
             <div className={styles.cardsContainer}>
               <div className={styles.card}>
-                <span className={styles.icon}>👤</span>
-                <p className={styles.value}>1,20,500+</p>
-                <span className={styles.label}>7+ Band Delivered</span>
+                <div>
+                  <span className={styles.icon}>👤</span>
+                  <p className={styles.value}>5,000+</p>
+                </div>
+
+                <span className={styles.label}>Students Enrolled</span>
               </div>
 
               <div className={styles.card}>
-                <span className={styles.icon}>⭐</span>
-                <p className={styles.value}>4.7</p>
+                <div>
+                  <span className={styles.icon}>⭐</span>
+                  <p className={styles.value}>4.7</p>
+                </div>
                 <span className={styles.label}>2,241 Reviews</span>
               </div>
             </div>

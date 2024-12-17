@@ -44,8 +44,8 @@ let Home = () => {
       <div className={styles.home}>
         <Navbar />
         <Banner />
-        <FeatureProperty />
         <WhatWillYouLearn/>
+        <FeatureProperty />
         <Numbers />
         <Features />
         <Testimonial />
