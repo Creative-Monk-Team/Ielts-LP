@@ -706,6 +706,7 @@
 .label {
   font-size: 0.7rem;
   color: #555;
+  font-weight: 700;
 }
 
 /* Media Query for Small Devices */
