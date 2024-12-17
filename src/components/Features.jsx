@@ -50,34 +50,41 @@ const Features = () => {
               isFirstView ? styles.showAnimationSection : ""
             }`}
           >
-            
             <h1>Reasons to Attend This Webinar</h1>
             <p className={styles.FeaturesContentPara}>
-              Join our exclusive IELTS webinar to gain expert insights, proven
-              strategies, and practical tips for all test sections. Boost your
-              performance, access study materials, and interact with experienced
-              trainers to prepare confidently for a high band score.
+              Join our IELTS webinar for expert insights, strategies, tips,
+              study materials, and trainer interaction. Prepare confidently for
+              a high band score!
             </p>
             <div className={styles.FeaturesListParent}>
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p><b>Expert guidance:</b> Learn from certified IELTS instructors with years of experience helping candidates succeed.</p>
+              <p>
+                <b>Expert guidance:</b> Learn from certified IELTS instructors
+                with years of experience helping candidates succeed.
+              </p>
             </div>
             <div className={styles.FeaturesListParent}>
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p><b>Proven Strategies:</b> Discover tried-and-tested tips to boost your performance in both the writing and speaking sections.</p>
+              <p>
+                <b>Proven Strategies:</b> Discover tried-and-tested tips to
+                boost your performance in both the writing and speaking
+                sections.
+              </p>
             </div>
             <div className={styles.FeaturesListParent}>
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p><b>Boost Confidence:</b>Improve your fluency, vocabulary, and coherence to speak with confidence during the speaking exam.</p>
+              <p>
+                <b>Boost Confidence:</b>Improve your fluency, vocabulary, and
+                coherence to speak with confidence during the speaking exam.
+              </p>
             </div>
- 
- 
+
             <span className={styles.encquireNowButton}>
               <Button text={"JOIN NOW FOR Rs 99"} />
             </span>

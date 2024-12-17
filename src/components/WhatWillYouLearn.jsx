@@ -44,7 +44,7 @@ const WhatWillYouLearn = () => {
           Unlock Your Potential in <span>2 Days!</span>
         </h1>
         <h3>
-          Join our <span>Crash Course</span>for rapid IELTS success with
+          Join our Crash Course {" "}for rapid IELTS success with
           step-by-step guidance and live practice sessions.
         </h3>
       </div>

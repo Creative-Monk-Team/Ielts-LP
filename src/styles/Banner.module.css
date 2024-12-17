@@ -717,7 +717,7 @@
     align-items: center;
   }
   .value {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .card {
@@ -752,9 +752,9 @@
   }
 
   .card {
-    padding: 15px 10px;
-    width: 150px;
-    height: 100px;
+    padding: 10px 5px;
+    width: 125px;
+    height: 90px;
   }
 }
 
