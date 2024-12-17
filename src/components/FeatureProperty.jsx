@@ -48,13 +48,7 @@ let FeatureProperty = () => {
             her clear and effective teaching.
           </h4>
           <p className={styles.innerFeaturePropertyDiscrip2}>
-            With over a decade of experience, we've assisted more than 100,000
-            students globally, offering expert guidance in education and career
-            development. Featured in top IELTS prep publications, we provide
-            proven strategies and insights to help students succeed.
-            Additionally, we've helped over 100 clients secure visa approvals,
-            expertly navigating immigration processes to unlock international
-            opportunities.
+          With 10+ years of experience, we’ve helped 100,000+ students and 100+ clients secure visas.
           </p>
 
           <Button text={"JOIN NOW FOR Rs 99"} />

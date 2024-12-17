@@ -107,14 +107,10 @@ const Banner = () => {
         <div className={styles.bannerContainer}>
           {/* Left Section */}
           <div className={styles.contentSection}>
-            <h1>
-              <span className={styles.title}>
-                Learn The Right Strategies To{" "}
-              </span>{" "}
+            <h1 className={styles.headingText}>
+              Learn The Right Strategies To{" "}
               <span className={styles.highlight}>Crack the IELTS Test</span>{" "}
-              <span className={styles.title}>with band score. </span>{" "}
-              <span className={styles.highlight}> 7+</span>{" "}
-              <span className={styles.title}> band score. </span>{" "}
+              with band score. <span className={styles.highlight}>7+</span> band score.
             </h1>
 
             <div className={styles.cardsContainer}>
@@ -140,20 +136,19 @@ const Banner = () => {
             </div>
             {/* <h3>What will you get</h3> */}
             <ul className={styles.featuresList}>
-              <li>  100+ Online Video Lessons</li>
-              <li>  50+ Mock Tests for All Sections</li>
-              <li>  Feedback Sessions with IELTS Trainers</li>
+              <li> 100+ Online Video Lessons</li>
+              <li> 50+ Mock Tests for All Sections</li>
+              <li> Feedback Sessions with IELTS Trainers</li>
             </ul>
             <div className={styles.pricing}>
               <h3>₹{discountPrice}</h3>
               <span className={styles.strikeThrough}>₹{originalPrice}</span>
               <span className={styles.discountTag}>90% OFF</span>
             </div>
-             <Button text={"JOIN NOW FOR Rs 99"} /> 
+            <Button text={"JOIN NOW FOR Rs 99"} />
           </div>
-        
         </div>
-        <CountdownTimer/>
+        <CountdownTimer />
       </div>
     </>
   );

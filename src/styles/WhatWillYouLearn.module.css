@@ -63,8 +63,8 @@
 /* Grid layout for cards */
 .cardGrid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
   margin-top: 20px;
 }
 
@@ -95,7 +95,7 @@
 
 /* Card content styling */
 .cardContent {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "GtSectra", sans-serif;
   color: #444;
   line-height: 1.6;
@@ -137,6 +137,8 @@
   .cardGrid {
       grid-template-columns: repeat(2, 1fr);
   }
+
+
 }
 
 @media (min-width: 1024px) {
@@ -146,6 +148,9 @@
 }
 
 @media (max-width: 768px) {
+  .card {
+    padding: 20px 5px;
+  }
   .heading h1 {
       font-size: 25px;
   }
@@ -190,11 +195,11 @@
   }
 
   .cardNumber {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
   }
 
   .cardContent {
-      font-size: 0.95rem;
+      font-size: 0.85rem;
   }
 
   .ctaButton {
