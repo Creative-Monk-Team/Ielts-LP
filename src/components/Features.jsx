@@ -50,10 +50,7 @@ const Features = () => {
               isFirstView ? styles.showAnimationSection : ""
             }`}
           >
-            <div className={styles.yellowLineFlex}>
-              <div></div>
-              <h5>Elevate Your Learning</h5>
-            </div>
+            
             <h1>Reasons to Attend This Webinar</h1>
             <p className={styles.FeaturesContentPara}>
               Join our exclusive IELTS webinar to gain expert insights, proven

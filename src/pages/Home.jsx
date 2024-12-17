@@ -44,23 +44,16 @@ let Home = () => {
       <div className={styles.home}>
         <Navbar />
         <Banner />
-        <About />
         <FeatureProperty />
-        <Features />
-        <Numbers />
-        <Joining />
         <WhatWillYouLearn/>
+        <Numbers />
+        <Features />
         <Testimonial />
-        {/* <CoursesCard /> */}
+        <Joining/>
         <Webinar />
-        {/* <WhyChooseUs/> */}
-        {/* <Explore /> */}
-        {/* <ContactForm /> */}
-        
         <Footer />
         <BottomCta />
-        {/* <Grid/> */}
-        {/* <CSS /> */}
+        
       </div>
     </>
   );

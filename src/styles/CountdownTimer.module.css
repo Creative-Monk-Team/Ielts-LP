@@ -72,3 +72,23 @@ ul {
     width: 70px;
   }
 }
+.timerHeader {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.dateDisplay {
+  margin: 0;
+}
+
+.timerHeader2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.dateDisplay2 {
+  margin: 0;
+}

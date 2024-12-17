@@ -52,6 +52,16 @@ const CountdownTimer = () => {
   return (
     <div className={styles.countdownTimer_container}>
       <h1 className={styles.countdownTimer_headline}>{headline}</h1>
+      <div className={styles.timerHeader}>
+        <p className={styles.dateDisplay}>
+          📅 21st December, 2024 &nbsp;&nbsp; ⏱️ 4:00 - 6:00pm
+        </p>
+      </div>
+      <div className={styles.timerHeader2}>
+        <p className={styles.dateDisplay2}>
+          📅 22nd December, 2024 &nbsp;&nbsp; ⏱️ 10:30am - 12:30pm
+        </p>
+      </div>
       {countdownVisible && (
         <div className={styles.countdownTimer_countdown}>
           <ul>
