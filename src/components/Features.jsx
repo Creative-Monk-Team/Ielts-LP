@@ -35,12 +35,12 @@ const Features = () => {
   return (
     <>
       <div className={styles.FeaturesParent} id="whyChooseUs">
-        <div className={styles.FeaturesChild}>
+        <div className={styles.FeaturesChild} ref={aboutRef}>
           <div
             className={`${styles.FeaturesImage} ${styles.animationSection} ${
               isFirstView ? styles.showAnimationSection : ""
             }`}
-            ref={aboutRef}
+            
           >
             {/* <img className={styles.img2} src={featImg2} alt="" /> */}
             <img className={styles.img1} src={BannerImage4} alt="" />

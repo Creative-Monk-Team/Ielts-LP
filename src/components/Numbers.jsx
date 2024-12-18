@@ -53,7 +53,7 @@ const Numbers = () => {
             <img src={Google} alt="Google rating" className={styles.iconImage} />
           </div>
           <p className={styles.rating}>
-            <strong>4.7 ⭐</strong>
+            <strong>4.5 ⭐</strong>
           </p>
           <p className={styles.text}>Student rating</p>
         </div>
@@ -75,7 +75,7 @@ const Numbers = () => {
             <img src={Student} alt="Students" className={styles.iconImage} />
           </div>
           <p className={styles.rating}>
-            <strong>10K+</strong>
+            <strong>5K+</strong>
           </p>
           <p className={styles.text}>Students</p>
         </div>

@@ -44,7 +44,7 @@ const WhatWillYouLearn = () => {
           Unlock Your Potential in <span>2 Days!</span>
         </h1>
         <h3>
-          Join our Crash Course {" "}for rapid IELTS success with
+          Join our Webinar {" "}for rapid IELTS success with
           step-by-step guidance and live practice sessions.
         </h3>
       </div>
@@ -120,16 +120,16 @@ const WhatWillYouLearn = () => {
             <div className={styles.cardNumber}>04</div>
             <div className={styles.cardContent}>Master Essay Structure</div>
           </div>
-          <div className={styles.card}>
+          {/* <div className={styles.card}>
             <div className={styles.cardNumber}>05</div>
             <div className={styles.cardContent}>Live Writing Practice</div>
-          </div>
+          </div> */}
           <div className={styles.card}>
-            <div className={styles.cardNumber}>06</div>
+            <div className={styles.cardNumber}>05</div>
             <div className={styles.cardContent}>Interactive Q&A</div>
           </div>
           <div className={styles.card}>
-            <div className={styles.cardNumber}>07</div>
+            <div className={styles.cardNumber}>06</div>
             <div className={styles.cardContent}>
               Exclusive Bonuses for Participants
             </div>
@@ -138,7 +138,7 @@ const WhatWillYouLearn = () => {
       </div>
 
       <div className={styles.ctaSection}>
-        <Button text={"Reserve Your Spot Now"} />
+        <Button text={"JOIN NOW FOR Rs 99"} />
         <p className={styles.ctaNote}>
           Hurry! Limited slots available for this exclusive 2-day crash course.
         </p>
